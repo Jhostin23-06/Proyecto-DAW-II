@@ -1,0 +1,13 @@
+# rabbitmq-simple/docker-compose.yml
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine  # ¡Esta imagen SIEMPRE funciona!
+    container_name: rabbitmq-simple
+    ports:
+      - "5672:5672"    # Para tus microservicios
+      - "15672:15672"  # Para la interfaz web
+    environment:
+      RABBITMQ_DEFAULT_USER: admin      # Usuario
+      RABBITMQ_DEFAULT_PASS: admin   # Contraseña
