@@ -3,11 +3,11 @@ version: '3.8'
 
 services:
   rabbitmq:
-    image: rabbitmq:3-management-alpine  # ¡Esta imagen SIEMPRE funciona!
+    image: rabbitmq:3-management-alpine 
     container_name: rabbitmq-simple
     ports:
-      - "5672:5672"    # Para tus microservicios
-      - "15672:15672"  # Para la interfaz web
+      - "5672:5672"   
+      - "15672:15672"  
     environment:
       RABBITMQ_DEFAULT_USER: admin      # Usuario
       RABBITMQ_DEFAULT_PASS: admin   # Contraseña
