@@ -1,0 +1,464 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.core:ms-users >--------------------------
+[INFO] Building ms-users 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.10:run (default-cli) > test-compile @ ms-users >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ms-users ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ms-users ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ms-users ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ ms-users ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] <<< spring-boot:3.5.10:run (default-cli) < test-compile @ ms-users <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.10:run (default-cli) @ ms-users ---
+Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.14/micrometer-observation-1.14.14.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.5.10/spring-boot-buildpack-platform-3.5.10.jar
+Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.14/micrometer-commons-1.14.14.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.5.10/spring-boot-loader-tools-3.5.10.jar
+Progress (1): 0.9/321 kBProgress (1): 2.3/321 kBProgress (1): 3.7/321 kBProgress (1): 5.0/321 kBProgress (1): 6.4/321 kBProgress (1): 7.8/321 kBProgress (1): 9.1/321 kBProgress (1): 11/321 kB Progress (1): 12/321 kBProgress (2): 12/321 kB | 1.4/455 kBProgress (2): 13/321 kB | 1.4/455 kBProgress (2): 13/321 kB | 2.7/455 kBProgress (2): 13/321 kB | 4.1/455 kBProgress (2): 15/321 kB | 4.1/455 kBProgress (2): 16/321 kB | 4.1/455 kBProgress (2): 16/321 kB | 5.5/455 kBProgress (2): 17/321 kB | 5.5/455 kBProgress (2): 17/321 kB | 6.8/455 kBProgress (2): 17/321 kB | 8.2/455 kBProgress (2): 19/321 kB | 8.2/455 kBProgress (2): 19/321 kB | 9.6/455 kBProgress (2): 19/321 kB | 11/455 kB Progress (3): 19/321 kB | 11/455 kB | 1.4/48 kBProgress (3): 20/321 kB | 11/455 kB | 1.4/48 kBProgress (3): 20/321 kB | 11/455 kB | 2.7/48 kBProgress (3): 20/321 kB | 11/455 kB | 4.1/48 kBProgress (3): 20/321 kB | 11/455 kB | 5.5/48 kBProgress (3): 20/321 kB | 12/455 kB | 5.5/48 kBProgress (3): 20/321 kB | 12/455 kB | 6.8/48 kBProgress (3): 21/321 kB | 12/455 kB | 6.8/48 kBProgress (3): 21/321 kB | 12/455 kB | 8.2/48 kBProgress (3): 21/321 kB | 14/455 kB | 8.2/48 kBProgress (3): 21/321 kB | 14/455 kB | 9.6/48 kBProgress (3): 21/321 kB | 14/455 kB | 11/48 kB Progress (3): 21/321 kB | 14/455 kB | 12/48 kBProgress (3): 21/321 kB | 14/455 kB | 14/48 kBProgress (3): 23/321 kB | 14/455 kB | 14/48 kBProgress (3): 23/321 kB | 14/455 kB | 15/48 kBProgress (3): 23/321 kB | 15/455 kB | 15/48 kBProgress (3): 24/321 kB | 15/455 kB | 15/48 kBProgress (3): 24/321 kB | 15/455 kB | 16/48 kBProgress (3): 24/321 kB | 16/455 kB | 16/48 kBProgress (3): 26/321 kB | 16/455 kB | 16/48 kBProgress (3): 26/321 kB | 16/455 kB | 18/48 kBProgress (3): 26/321 kB | 16/455 kB | 19/48 kBProgress (3): 26/321 kB | 18/455 kB | 19/48 kBProgress (3): 26/321 kB | 18/455 kB | 21/48 kBProgress (3): 27/321 kB | 18/455 kB | 21/48 kBProgress (3): 27/321 kB | 19/455 kB | 21/48 kBProgress (3): 27/321 kB | 19/455 kB | 22/48 kBProgress (3): 27/321 kB | 19/455 kB | 23/48 kBProgress (3): 27/321 kB | 20/455 kB | 23/48 kBProgress (3): 28/321 kB | 20/455 kB | 23/48 kBProgress (3): 28/321 kB | 20/455 kB | 25/48 kBProgress (3): 28/321 kB | 22/455 kB | 25/48 kBProgress (3): 28/321 kB | 23/455 kB | 25/48 kBProgress (3): 30/321 kB | 23/455 kB | 25/48 kBProgress (3): 30/321 kB | 23/455 kB | 26/48 kBProgress (3): 30/321 kB | 25/455 kB | 26/48 kBProgress (3): 30/321 kB | 26/455 kB | 26/48 kBProgress (3): 30/321 kB | 26/455 kB | 27/48 kBProgress (3): 31/321 kB | 26/455 kB | 27/48 kBProgress (3): 31/321 kB | 27/455 kB | 27/48 kBProgress (3): 32/321 kB | 27/455 kB | 27/48 kBProgress (3): 34/321 kB | 27/455 kB | 27/48 kBProgress (3): 35/321 kB | 27/455 kB | 27/48 kBProgress (3): 35/321 kB | 27/455 kB | 29/48 kBProgress (3): 35/321 kB | 29/455 kB | 29/48 kBProgress (3): 37/321 kB | 29/455 kB | 29/48 kBProgress (3): 37/321 kB | 30/455 kB | 29/48 kBProgress (3): 37/321 kB | 30/455 kB | 30/48 kBProgress (3): 37/321 kB | 30/455 kB | 31/48 kBProgress (3): 38/321 kB | 30/455 kB | 31/48 kBProgress (3): 38/321 kB | 31/455 kB | 31/48 kBProgress (3): 39/321 kB | 31/455 kB | 31/48 kBProgress (3): 39/321 kB | 31/455 kB | 33/48 kBProgress (3): 41/321 kB | 31/455 kB | 33/48 kBProgress (3): 42/321 kB | 31/455 kB | 33/48 kBProgress (3): 42/321 kB | 33/455 kB | 33/48 kBProgress (3): 43/321 kB | 33/455 kB | 33/48 kBProgress (3): 45/321 kB | 33/455 kB | 33/48 kBProgress (3): 45/321 kB | 33/455 kB | 34/48 kBProgress (3): 45/321 kB | 34/455 kB | 34/48 kBProgress (3): 46/321 kB | 34/455 kB | 34/48 kBProgress (3): 46/321 kB | 36/455 kB | 34/48 kBProgress (3): 46/321 kB | 36/455 kB | 36/48 kBProgress (3): 47/321 kB | 36/455 kB | 36/48 kBProgress (3): 47/321 kB | 37/455 kB | 36/48 kBProgress (3): 49/321 kB | 37/455 kB | 36/48 kBProgress (3): 49/321 kB | 37/455 kB | 37/48 kBProgress (3): 49/321 kB | 38/455 kB | 37/48 kBProgress (3): 50/321 kB | 38/455 kB | 37/48 kBProgress (3): 50/321 kB | 38/455 kB | 38/48 kBProgress (3): 52/321 kB | 38/455 kB | 38/48 kBProgress (3): 52/321 kB | 38/455 kB | 40/48 kBProgress (3): 52/321 kB | 38/455 kB | 41/48 kBProgress (3): 52/321 kB | 40/455 kB | 41/48 kBProgress (3): 52/321 kB | 41/455 kB | 41/48 kBProgress (3): 52/321 kB | 41/455 kB | 42/48 kBProgress (3): 52/321 kB | 42/455 kB | 42/48 kBProgress (3): 53/321 kB | 42/455 kB | 42/48 kBProgress (3): 53/321 kB | 42/455 kB | 44/48 kBProgress (3): 53/321 kB | 44/455 kB | 44/48 kBProgress (3): 54/321 kB | 44/455 kB | 44/48 kBProgress (3): 54/321 kB | 44/455 kB | 45/48 kBProgress (3): 54/321 kB | 45/455 kB | 45/48 kBProgress (3): 54/321 kB | 45/455 kB | 47/48 kBProgress (3): 56/321 kB | 45/455 kB | 47/48 kBProgress (3): 56/321 kB | 46/455 kB | 47/48 kBProgress (3): 56/321 kB | 46/455 kB | 48 kB   Progress (3): 56/321 kB | 48/455 kB | 48 kBProgress (3): 56/321 kB | 49/455 kB | 48 kBProgress (3): 56/321 kB | 51/455 kB | 48 kBProgress (3): 56/321 kB | 52/455 kB | 48 kBProgress (3): 56/321 kB | 53/455 kB | 48 kBProgress (3): 56/321 kB | 55/455 kB | 48 kBProgress (3): 60/321 kB | 55/455 kB | 48 kBProgress (3): 60/321 kB | 59/455 kB | 48 kBProgress (3): 60/321 kB | 63/455 kB | 48 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 0.9/75 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 2.3/75 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 3.7/75 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 5.0/75 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 6.4/75 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 7.8/75 kBProgress (4): 60/321 kB | 63/455 kB | 48 kB | 9.1/75 kB                                                       Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.14/micrometer-commons-1.14.14.jar (48 kB at 50 kB/s)
+Progress (3): 60/321 kB | 63/455 kB | 11/75 kBProgress (3): 60/321 kB | 63/455 kB | 12/75 kBProgress (3): 60/321 kB | 63/455 kB | 13/75 kBProgress (3): 60/321 kB | 63/455 kB | 15/75 kBProgress (3): 60/321 kB | 63/455 kB | 16/75 kBProgress (3): 60/321 kB | 63/455 kB | 17/75 kBProgress (3): 60/321 kB | 63/455 kB | 19/75 kBProgress (3): 60/321 kB | 63/455 kB | 20/75 kBProgress (3): 60/321 kB | 63/455 kB | 21/75 kBProgress (3): 60/321 kB | 63/455 kB | 23/75 kBProgress (3): 60/321 kB | 63/455 kB | 24/75 kBProgress (3): 60/321 kB | 63/455 kB | 26/75 kBProgress (3): 60/321 kB | 63/455 kB | 27/75 kBProgress (3): 60/321 kB | 63/455 kB | 28/75 kBProgress (3): 60/321 kB | 63/455 kB | 30/75 kBProgress (3): 60/321 kB | 63/455 kB | 31/75 kBProgress (3): 60/321 kB | 63/455 kB | 32/75 kBProgress (3): 60/321 kB | 63/455 kB | 34/75 kBProgress (3): 60/321 kB | 63/455 kB | 35/75 kBProgress (3): 60/321 kB | 63/455 kB | 37/75 kBProgress (3): 60/321 kB | 63/455 kB | 38/75 kBProgress (3): 60/321 kB | 63/455 kB | 39/75 kBProgress (3): 60/321 kB | 63/455 kB | 41/75 kBProgress (3): 60/321 kB | 63/455 kB | 42/75 kBProgress (3): 60/321 kB | 63/455 kB | 43/75 kBProgress (3): 60/321 kB | 63/455 kB | 45/75 kBProgress (3): 60/321 kB | 63/455 kB | 46/75 kBProgress (3): 60/321 kB | 63/455 kB | 47/75 kBProgress (3): 60/321 kB | 63/455 kB | 49/75 kBProgress (3): 60/321 kB | 63/455 kB | 50/75 kBProgress (3): 60/321 kB | 63/455 kB | 52/75 kBProgress (3): 60/321 kB | 63/455 kB | 53/75 kBProgress (3): 60/321 kB | 63/455 kB | 54/75 kBProgress (3): 60/321 kB | 63/455 kB | 56/75 kBProgress (3): 64/321 kB | 63/455 kB | 56/75 kBProgress (3): 64/321 kB | 63/455 kB | 60/75 kBProgress (3): 64/321 kB | 66/455 kB | 60/75 kBProgress (3): 68/321 kB | 66/455 kB | 60/75 kBProgress (3): 73/321 kB | 66/455 kB | 60/75 kBProgress (3): 73/321 kB | 70/455 kB | 60/75 kBProgress (3): 73/321 kB | 74/455 kB | 60/75 kBProgress (3): 77/321 kB | 74/455 kB | 60/75 kBProgress (3): 81/321 kB | 74/455 kB | 60/75 kBProgress (3): 85/321 kB | 74/455 kB | 60/75 kBProgress (3): 85/321 kB | 78/455 kB | 60/75 kBProgress (3): 90/321 kB | 78/455 kB | 60/75 kBProgress (3): 94/321 kB | 78/455 kB | 60/75 kBProgress (3): 94/321 kB | 82/455 kB | 60/75 kBProgress (3): 94/321 kB | 87/455 kB | 60/75 kBProgress (3): 98/321 kB | 87/455 kB | 60/75 kBProgress (3): 98/321 kB | 91/455 kB | 60/75 kBProgress (3): 102/321 kB | 91/455 kB | 60/75 kBProgress (3): 102/321 kB | 95/455 kB | 60/75 kBProgress (3): 106/321 kB | 95/455 kB | 60/75 kBProgress (3): 106/321 kB | 98/455 kB | 60/75 kBProgress (3): 111/321 kB | 98/455 kB | 60/75 kBProgress (3): 111/321 kB | 103/455 kB | 60/75 kBProgress (3): 115/321 kB | 103/455 kB | 60/75 kBProgress (3): 115/321 kB | 107/455 kB | 60/75 kBProgress (3): 119/321 kB | 107/455 kB | 60/75 kBProgress (3): 119/321 kB | 111/455 kB | 60/75 kBProgress (3): 123/321 kB | 111/455 kB | 60/75 kBProgress (3): 123/321 kB | 115/455 kB | 60/75 kBProgress (3): 128/321 kB | 115/455 kB | 60/75 kBProgress (3): 132/321 kB | 115/455 kB | 60/75 kBProgress (3): 132/321 kB | 119/455 kB | 60/75 kBProgress (3): 136/321 kB | 119/455 kB | 60/75 kBProgress (3): 136/321 kB | 124/455 kB | 60/75 kBProgress (3): 140/321 kB | 124/455 kB | 60/75 kBProgress (3): 140/321 kB | 128/455 kB | 60/75 kBProgress (3): 140/321 kB | 131/455 kB | 60/75 kBProgress (3): 140/321 kB | 135/455 kB | 60/75 kBProgress (3): 140/321 kB | 140/455 kB | 60/75 kBProgress (3): 140/321 kB | 144/455 kB | 60/75 kBProgress (3): 140/321 kB | 147/455 kB | 60/75 kBProgress (3): 140/321 kB | 147/455 kB | 64/75 kBProgress (3): 144/321 kB | 147/455 kB | 64/75 kBProgress (3): 144/321 kB | 147/455 kB | 68/75 kBProgress (3): 144/321 kB | 152/455 kB | 68/75 kBProgress (3): 149/321 kB | 152/455 kB | 68/75 kBProgress (3): 149/321 kB | 152/455 kB | 73/75 kBProgress (3): 149/321 kB | 156/455 kB | 73/75 kBProgress (3): 149/321 kB | 156/455 kB | 75 kB   Progress (3): 153/321 kB | 156/455 kB | 75 kBProgress (3): 153/321 kB | 160/455 kB | 75 kBProgress (3): 157/321 kB | 160/455 kB | 75 kBProgress (3): 157/321 kB | 164/455 kB | 75 kBProgress (3): 161/321 kB | 164/455 kB | 75 kB                                             Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.14/micrometer-observation-1.14.14.jar (75 kB at 61 kB/s)
+Progress (2): 161/321 kB | 169/455 kBProgress (2): 161/321 kB | 173/455 kBProgress (2): 166/321 kB | 173/455 kBProgress (2): 166/321 kB | 177/455 kBProgress (2): 170/321 kB | 177/455 kBProgress (2): 170/321 kB | 181/455 kBProgress (2): 174/321 kB | 181/455 kBProgress (2): 178/321 kB | 181/455 kBProgress (2): 178/321 kB | 186/455 kBProgress (2): 183/321 kB | 186/455 kBProgress (2): 187/321 kB | 186/455 kBProgress (2): 187/321 kB | 190/455 kBProgress (2): 187/321 kB | 194/455 kBProgress (2): 191/321 kB | 194/455 kBProgress (2): 191/321 kB | 198/455 kBProgress (2): 195/321 kB | 198/455 kBProgress (2): 195/321 kB | 202/455 kBProgress (2): 199/321 kB | 202/455 kBProgress (2): 199/321 kB | 207/455 kBProgress (2): 204/321 kB | 207/455 kBProgress (2): 204/321 kB | 211/455 kBProgress (2): 208/321 kB | 211/455 kBProgress (2): 208/321 kB | 215/455 kBProgress (2): 212/321 kB | 215/455 kBProgress (2): 216/321 kB | 215/455 kBProgress (2): 216/321 kB | 219/455 kBProgress (2): 221/321 kB | 219/455 kBProgress (2): 225/321 kB | 219/455 kBProgress (2): 241/321 kB | 219/455 kBProgress (2): 241/321 kB | 236/455 kBProgress (2): 241/321 kB | 252/455 kBProgress (2): 258/321 kB | 252/455 kBProgress (2): 258/321 kB | 269/455 kBProgress (2): 258/321 kB | 279/455 kBProgress (2): 274/321 kB | 279/455 kBProgress (2): 274/321 kB | 295/455 kBProgress (2): 290/321 kB | 295/455 kBProgress (2): 290/321 kB | 311/455 kBProgress (2): 307/321 kB | 311/455 kBProgress (2): 307/321 kB | 328/455 kBProgress (2): 321 kB | 328/455 kB                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.5.10/spring-boot-buildpack-platform-3.5.10.jar (321 kB at 210 kB/s)
+Progress (1): 344/455 kBProgress (1): 360/455 kBProgress (1): 377/455 kBProgress (1): 393/455 kBProgress (1): 410/455 kBProgress (1): 426/455 kBProgress (1): 442/455 kBProgress (1): 455 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.5.10/spring-boot-loader-tools-3.5.10.jar (455 kB at 263 kB/s)
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.10)
+
+2026-02-20T21:40:43.735-05:00  INFO 38288 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : Starting MsUsersApplication using Java 21.0.10 with PID 38288 (C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-users\target\classes started by jhost in C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-users)
+2026-02-20T21:40:43.736-05:00 DEBUG 38288 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : Running with Spring Boot v3.5.10, Spring v6.2.15
+2026-02-20T21:40:43.736-05:00  INFO 38288 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-02-20T21:40:44.584-05:00  INFO 38288 --- [ms-users] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-20T21:40:44.769-05:00  INFO 38288 --- [ms-users] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175 ms. Found 1 JPA repository interface.
+2026-02-20T21:40:45.003-05:00  INFO 38288 --- [ms-users] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d2984d06-4a1f-37b6-9b8d-8fbedddcf6de
+2026-02-20T21:40:45.428-05:00  INFO 38288 --- [ms-users] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2026-02-20T21:40:45.446-05:00  INFO 38288 --- [ms-users] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-20T21:40:45.447-05:00  INFO 38288 --- [ms-users] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-20T21:40:45.510-05:00  INFO 38288 --- [ms-users] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-20T21:40:45.511-05:00  INFO 38288 --- [ms-users] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1725 ms
+2026-02-20T21:40:45.649-05:00  INFO 38288 --- [ms-users] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-20T21:40:45.719-05:00  INFO 38288 --- [ms-users] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-20T21:40:45.757-05:00  INFO 38288 --- [ms-users] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-20T21:40:46.153-05:00  INFO 38288 --- [ms-users] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-20T21:40:46.197-05:00  INFO 38288 --- [ms-users] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-20T21:40:46.410-05:00  INFO 38288 --- [ms-users] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b88af70
+2026-02-20T21:40:46.411-05:00  INFO 38288 --- [ms-users] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-20T21:40:46.465-05:00  WARN 38288 --- [ms-users] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-20T21:40:46.488-05:00  INFO 38288 --- [ms-users] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.7
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-20T21:40:47.519-05:00  INFO 38288 --- [ms-users] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-20T21:40:47.687-05:00  INFO 38288 --- [ms-users] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-20T21:40:48.002-05:00 DEBUG 38288 --- [ms-users] [           main] c.c.m.i.s.JwtAuthenticationFilter        : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-20T21:40:48.102-05:00  INFO 38288 --- [ms-users] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-02-20T21:40:48.155-05:00  WARN 38288 --- [ms-users] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-20T21:40:48.743-05:00  INFO 38288 --- [ms-users] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-20T21:40:48.768-05:00  WARN 38288 --- [ms-users] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-20T21:40:48.785-05:00  INFO 38288 --- [ms-users] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-20T21:40:48.806-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-20T21:40:48.810-05:00  INFO 38288 --- [ms-users] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T21:40:48.817-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-20T21:40:48.818-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-20T21:40:48.818-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-20T21:40:48.818-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-20T21:40:48.818-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-20T21:40:48.818-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-20T21:40:48.818-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-20T21:40:49.177-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-20T21:40:49.178-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-20T21:40:49.179-05:00  INFO 38288 --- [ms-users] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-20T21:40:49.180-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771641649179 with initial instances count: 0
+2026-02-20T21:40:49.183-05:00  INFO 38288 --- [ms-users] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-USERS with eureka with status UP
+2026-02-20T21:40:49.183-05:00  INFO 38288 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771641649183, current=UP, previous=STARTING]
+2026-02-20T21:40:49.184-05:00  INFO 38288 --- [ms-users] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-USERS/LAPTOP-1RVSALIH.mshome.net:ms-users:8084: registering service...
+2026-02-20T21:40:49.207-05:00  INFO 38288 --- [ms-users] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2026-02-20T21:40:49.208-05:00  INFO 38288 --- [ms-users] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-02-20T21:40:49.219-05:00  INFO 38288 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : Started MsUsersApplication in 5.971 seconds (process running for 6.418)
+2026-02-20T21:40:49.303-05:00  INFO 38288 --- [ms-users] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-USERS/LAPTOP-1RVSALIH.mshome.net:ms-users:8084 - registration status: 204
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-02-20T21:41:19.184-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-20T21:41:19.217-05:00  INFO 38288 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-20T21:45:48.833-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T21:46:00.818-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-20T21:46:00.818-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-20T21:46:00.819-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-20T21:46:00.844-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/auth/login
+2026-02-20T21:46:00.844-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: null
+2026-02-20T21:46:00.875-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.s.AuthenticateUserServiceImpl    : Autenticando usuario con email: alex@urbano.com
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T21:46:01.450-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T21:46:01.450-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T21:46:01.522-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T21:46:12.315-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T21:46:12.315-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T21:46:12.324-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T21:50:48.843-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T21:55:48.855-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T21:57:28.762-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T21:57:28.762-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T21:57:28.773-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T21:57:46.981-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T21:57:46.982-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T21:57:46.995-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:00:48.861-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:03:48.227-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:03:48.227-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:03:48.242-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:05:48.863-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:09:47.647-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:09:47.650-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:09:47.710-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:10:48.867-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:15:48.877-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:20:31.983-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:20:31.993-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:20:32.020-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:20:48.899-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:20:56.081-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:20:56.081-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:20:56.094-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:21:04.959-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:21:04.959-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:21:04.981-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:22:25.862-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:22:25.862-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:22:25.879-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:25:48.901-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:30:48.913-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:32:19.366-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:32:19.366-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:32:19.392-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:33:53.319-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:33:53.319-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:33:53.335-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:34:33.212-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:34:33.212-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:34:33.229-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:35:48.969-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:40:48.971-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:45:48.983-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:46:27.215-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:46:27.215-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:46:27.236-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:47:30.139-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:47:30.142-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:47:30.157-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:48:52.024-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:48:52.025-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:48:52.037-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:50:48.985-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:55:48.987-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T22:58:06.839-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:58:06.841-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:58:06.868-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:59:03.111-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:59:03.111-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:59:03.128-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T22:59:16.164-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T22:59:16.164-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T22:59:16.180-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T23:00:46.529-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-20T23:00:46.529-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-20T23:00:46.549-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-20T23:01:00.116-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T23:06:00.129-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T23:11:00.144-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:07:51.795-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:07:51.795-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:07:51.816-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:08:14.993-05:00  WARN 38288 --- [ms-users] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m25s492ms445µs701ns).
+2026-02-21T00:08:15.252-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:15:51.994-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:15:52.005-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:15:52.061-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:15:56.071-05:00  WARN 38288 --- [ms-users] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m41s78ms571µs500ns).
+2026-02-21T00:20:26.331-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:23:35.921-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:23:35.921-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:23:35.942-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:25:26.343-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:25:43.680-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:25:43.680-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:25:43.696-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:26:03.293-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:26:03.293-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:26:03.314-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:27:29.742-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:27:29.743-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:27:29.752-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:30:26.360-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:32:05.836-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:32:05.837-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:32:05.859-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:32:33.811-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:32:33.811-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:32:33.820-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:32:52.808-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:32:52.808-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:32:52.821-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:34:42.059-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:34:42.061-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:34:42.084-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:35:17.574-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:35:17.574-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:35:17.595-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:35:26.362-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:35:58.865-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:35:58.865-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:35:58.885-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:40:26.370-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:41:19.964-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:41:19.964-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:41:19.979-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:41:36.855-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:41:36.857-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:41:36.865-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:41:48.858-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:41:48.860-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:41:48.876-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:42:43.853-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:42:43.853-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:42:43.863-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:43:42.493-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:43:42.499-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:43:42.528-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:43:58.287-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users/94705484-a48b-4ec7-a9f8-e18f23a99507
+2026-02-21T00:43:58.287-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:43:58.338-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.a.service.DeleteUserServiceImpl    : Eliminando usuario con ID: 94705484-a48b-4ec7-a9f8-e18f23a99507
+Hibernate: select count(*) from users ue1_0 where ue1_0.user_id=?
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_id=?
+Hibernate: update users set is_active=?,updated_at=?,user_email=?,user_name=?,user_password=?,user_role=? where user_id=?
+2026-02-21T00:43:59.228-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.a.service.DeleteUserServiceImpl    : Usuario eliminado (desactivado): 94705484-a48b-4ec7-a9f8-e18f23a99507
+2026-02-21T00:43:59.243-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:43:59.243-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:43:59.247-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:44:17.592-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:44:17.592-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:44:17.609-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.CreateUserServiceImpl    : Creando nuevo usuario con email: julio@gmail.com
+2026-02-21T00:44:17.626-05:00 ERROR 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.e.GlobalExceptionHandler         : Error de validación: Contraseña debe tener al menos 8 caracteres, mayúscula, minúscula y número
+2026-02-21T00:44:30.831-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:44:30.832-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:44:30.856-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.CreateUserServiceImpl    : Creando nuevo usuario con email: julio@gmail.com
+Hibernate: select ue1_0.user_id from users ue1_0 where ue1_0.user_email=? fetch first ? rows only
+2026-02-21T00:44:30.885-05:00 ERROR 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.e.GlobalExceptionHandler         : Error de validación: El email julio@gmail.com ya está registrado
+2026-02-21T00:44:48.004-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:44:48.004-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:44:48.008-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.CreateUserServiceImpl    : Creando nuevo usuario con email: juliobravo@gmail.com
+Hibernate: select ue1_0.user_id from users ue1_0 where ue1_0.user_email=? fetch first ? rows only
+2026-02-21T00:44:48.148-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.CreateUserServiceImpl    : Usuario creado exitosamente con ID: bc87e215-5dab-4928-b1c3-598043b99ec7
+Hibernate: insert into users (is_active,created_at,updated_at,user_email,user_name,user_password,user_role,user_id) values (?,?,?,?,?,?,?,?)
+2026-02-21T00:44:48.164-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:44:48.164-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:44:48.171-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T00:45:26.376-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:46:53.106-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/auth/login
+2026-02-21T00:46:53.108-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: null
+2026-02-21T00:46:53.143-05:00  INFO 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.a.s.AuthenticateUserServiceImpl    : Autenticando usuario con email: juliobravo@gmail.com
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:50:26.385-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:55:26.394-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:59:55.535-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T00:59:55.535-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T00:59:55.550-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:00:26.409-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:04:10.037-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:04:10.038-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:04:10.062-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:05:26.418-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:08:37.226-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:08:37.226-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:08:37.245-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:08:56.883-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:08:56.883-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:08:56.893-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:09:20.927-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:09:20.927-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:09:20.934-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-2] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:10:26.422-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:15:26.437-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:20:26.443-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:25:26.455-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:30:26.470-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:32:44.967-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:32:44.967-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:32:45.012-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-7] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:35:26.474-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:40:26.483-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:41:49.587-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:41:49.587-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:41:49.619-05:00 DEBUG 38288 --- [ms-users] [io-8084-exec-10] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:45:18.041-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:45:18.041-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:45:18.068-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-1] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:45:24.877-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:45:24.877-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:45:24.896-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:45:26.487-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:45:32.962-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:45:32.962-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:45:32.975-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-5] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:45:50.971-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:45:50.971-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:45:50.979-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-6] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:50:21.013-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T01:50:21.013-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T01:50:21.036-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-4] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T01:50:26.493-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:55:26.498-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:00:26.500-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:01:43.127-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T02:01:43.127-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T02:01:43.138-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-8] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T02:05:26.505-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:10:26.511-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:11:50.015-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T02:11:50.016-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T02:11:50.026-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-9] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T02:15:26.519-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:17:16.885-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T02:17:16.885-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T02:17:16.932-05:00 DEBUG 38288 --- [ms-users] [nio-8084-exec-3] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
+2026-02-21T02:20:26.525-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:25:26.528-05:00  INFO 38288 --- [ms-users] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

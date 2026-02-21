@@ -1,0 +1,925 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.transporte:ms-clientes >---------------------
+[INFO] Building ms-clientes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.2:run (default-cli) > test-compile @ ms-clientes >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ms-clientes ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ms-clientes ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 24 source files with javac [debug parameters release 21] to target\classes
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[13,12] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[13,12] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[13,12] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[13,12] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[13,12] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[14,20] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[18,64] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[18,64] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[18,64] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[18,64] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[WARNING] /C:/Users/jhost/Desktop/CIBERTEC/proyecto-transportes/ms-clientes/src/main/java/core/cibertec/ms_clientes/infrastructure/messaging/RabbitJsonConfig.java:[18,64] org.springframework.amqp.support.converter.Jackson2JsonMessageConverter in org.springframework.amqp.support.converter has been deprecated and marked for removal
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ms-clientes ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ ms-clientes ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] <<< spring-boot:4.0.2:run (default-cli) < test-compile @ ms-clientes <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.2:run (default-cli) @ ms-clientes ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-02-20T21:40:57.541-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : Starting MsClientesApplication using Java 21.0.10 with PID 57264 (C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-clientes\target\classes started by jhost in C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-clientes)
+2026-02-20T21:40:57.542-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-20T21:40:57.586-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-20T21:40:57.586-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-20T21:40:58.190-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-20T21:40:58.296-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2026-02-20T21:40:58.484-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eaff62b7-06a5-313a-88e7-6f920e77cb35
+2026-02-20T21:40:58.815-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-02-20T21:40:58.825-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-20T21:40:58.825-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-20T21:40:58.862-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1275 ms
+2026-02-20T21:40:58.975-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-20T21:40:59.029-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-20T21:40:59.355-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-20T21:40:59.384-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-20T21:40:59.518-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a96a220
+2026-02-20T21:40:59.519-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-20T21:40:59.594-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/clientes_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: clientes_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-20T21:41:00.529-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-20T21:41:00.656-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-20T21:41:00.732-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-20T21:41:01.170-05:00  WARN 57264 --- [ms-clientes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-20T21:41:01.456-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-02-20T21:41:01.489-05:00  WARN 57264 --- [ms-clientes] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-20T21:41:01.522-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-20T21:41:01.538-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-20T21:41:01.542-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-20T21:41:01.548-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-20T21:41:01.549-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-20T21:41:01.549-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-20T21:41:01.549-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-20T21:41:01.549-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-20T21:41:01.549-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-20T21:41:01.549-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-20T21:41:01.785-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-20T21:41:01.786-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-20T21:41:01.789-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-20T21:41:01.790-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771641661790 with initial instances count: 1
+2026-02-20T21:41:01.793-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-CLIENTES with eureka with status UP
+2026-02-20T21:41:01.793-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771641661793, current=UP, previous=STARTING]
+2026-02-20T21:41:01.795-05:00  INFO 57264 --- [ms-clientes] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CLIENTES/LAPTOP-1RVSALIH.mshome.net:ms-clientes:8081: registering service...
+2026-02-20T21:41:01.807-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-02-20T21:41:01.809-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-20T21:41:01.820-05:00  INFO 57264 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : Started MsClientesApplication in 4.605 seconds (process running for 5.097)
+2026-02-20T21:41:01.826-05:00  INFO 57264 --- [ms-clientes] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CLIENTES/LAPTOP-1RVSALIH.mshome.net:ms-clientes:8081 - registration status: 204
+2026-02-20T21:46:01.539-05:00  INFO 57264 --- [ms-clientes] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-20T21:46:01.539-05:00  INFO 57264 --- [ms-clientes] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-20T21:46:01.541-05:00  INFO 57264 --- [ms-clientes] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-20T21:46:01.554-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T21:51:01.561-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T21:56:01.572-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:01:01.584-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:06:01.593-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:11:01.605-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:16:01.619-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:21:01.622-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:26:01.631-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:31:01.647-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:36:01.656-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:41:01.669-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:46:01.679-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:51:01.682-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T22:56:01.690-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T23:01:12.825-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T23:06:12.841-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-20T23:11:12.848-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:15:38.139-05:00  WARN 57264 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m56s178ms231µs800ns).
+2026-02-21T00:15:39.030-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:20:39.041-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:25:39.050-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:30:39.058-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:35:39.062-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:40:39.070-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T00:45:39.075-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:50:39.089-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T00:55:39.094-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T01:00:39.102-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T01:05:39.115-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T01:10:39.117-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:15:39.129-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:20:39.145-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:25:39.152-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:30:39.168-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T01:35:39.173-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:40:39.185-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T01:45:39.193-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T01:50:39.199-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T01:55:39.213-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:00:39.219-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T02:05:39.223-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:10:39.229-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T02:15:39.235-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T02:20:39.242-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:25:39.254-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

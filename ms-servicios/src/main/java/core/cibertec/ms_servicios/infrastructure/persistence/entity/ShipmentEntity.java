@@ -23,6 +23,7 @@ public class ShipmentEntity implements Serializable {
     @Column(name = "shipment_id")
     private Long shipmentId;
 
+    @Column(name = "category_id")
     private Long categoryId;
     private String description;
     private Double price;
@@ -31,11 +32,19 @@ public class ShipmentEntity implements Serializable {
     private String origin;
     private String destination;
     private Long clientId;
-    private Long transportId;
+    private String transportId;
     private String orderNumber;
-    private String status;
+    private String status; // legacy column for backward compatibility
 
     private LocalDateTime atDate;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", insertable = false, updatable = false)
+    private ShipmentCategoryEntity categoryRef;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "status_id")
+    private ShipmentStatusEntity statusRef;
 
     @CreationTimestamp
     private LocalDateTime createdAt;

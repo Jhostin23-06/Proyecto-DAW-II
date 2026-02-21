@@ -9,4 +9,8 @@ public interface ShipmentPersistencePort {
     ShipmentResponse save(ShipmentRequest request);
     ShipmentResponse findById(Long id);
     List<ShipmentResponse> findAll();
+    List<ShipmentResponse> findByTransportId(String transportId);
+    List<ShipmentResponse> findByTransportIds(List<String> transportIds);
+    ShipmentResponse updateStatus(Long shipmentId, Long statusId);
+    boolean deleteById(Long shipmentId);
 }

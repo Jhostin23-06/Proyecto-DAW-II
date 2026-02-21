@@ -9,4 +9,6 @@ import java.util.List;
 @Repository
 public interface ShipmentRepository extends JpaRepository<ShipmentEntity, Long> {
     List<ShipmentEntity> findByOrderNumber(String orderNumber);
+    List<ShipmentEntity> findByTransportId(String transportId);
+    List<ShipmentEntity> findByTransportIdIn(List<String> transportIds);
 }
