@@ -38,6 +38,12 @@ app:
   jwt:
     secret: mySecretKeyForJWTGenerationWithAtLeast32Characters
     expiration: 86400000
+  seed:
+    admin:
+      enabled: true
+      name: Admin Principal
+      email: admin@transportes.local
+      password: Admin123!
 
 logging:
   level:

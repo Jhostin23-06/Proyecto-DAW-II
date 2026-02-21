@@ -13,7 +13,7 @@
 [INFO] 
 [INFO] --- compiler:3.14.1:compile (default-compile) @ ms-servicios ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 55 source files with javac [debug parameters release 21] to target\classes
+[INFO] Compiling 57 source files with javac [debug parameters release 21] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ ms-servicios ---
 [INFO] Not copying test resources
@@ -36,23 +36,23 @@
 
  :: Spring Boot ::                (v4.0.2)
 
-2026-02-21T03:03:41.911-05:00  INFO 39368 --- [ms-servicios] [           main] c.c.ms_servicios.MsServiciosApplication  : Starting MsServiciosApplication using Java 21.0.10 with PID 39368 (C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-servicios\target\classes started by jhost in C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-servicios)
-2026-02-21T03:03:41.924-05:00  INFO 39368 --- [ms-servicios] [           main] c.c.ms_servicios.MsServiciosApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-02-21T03:03:45.394-05:00  INFO 39368 --- [ms-servicios] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-21T03:03:45.847-05:00  INFO 39368 --- [ms-servicios] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 436 ms. Found 3 JPA repository interfaces.
-2026-02-21T03:03:47.173-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ca041354-0699-3957-8b67-f071264d4ffc
-2026-02-21T03:03:49.443-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
-2026-02-21T03:03:49.483-05:00  INFO 39368 --- [ms-servicios] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-21T03:03:49.487-05:00  INFO 39368 --- [ms-servicios] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-21T03:03:49.727-05:00  INFO 39368 --- [ms-servicios] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 7652 ms
-2026-02-21T03:03:51.253-05:00  INFO 39368 --- [ms-servicios] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-21T03:03:51.430-05:00  INFO 39368 --- [ms-servicios] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
-2026-02-21T03:03:52.921-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-21T03:03:53.019-05:00  INFO 39368 --- [ms-servicios] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-21T03:03:53.436-05:00  INFO 39368 --- [ms-servicios] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2330c995
-2026-02-21T03:03:53.446-05:00  INFO 39368 --- [ms-servicios] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-21T03:03:53.525-05:00  WARN 39368 --- [ms-servicios] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-21T03:03:53.593-05:00  INFO 39368 --- [ms-servicios] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-02-21T12:43:02.702-05:00  INFO 65572 --- [ms-servicios] [           main] c.c.ms_servicios.MsServiciosApplication  : Starting MsServiciosApplication using Java 21.0.10 with PID 65572 (C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-servicios\target\classes started by jhost in C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-servicios)
+2026-02-21T12:43:02.705-05:00  INFO 65572 --- [ms-servicios] [           main] c.c.ms_servicios.MsServiciosApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-02-21T12:43:03.917-05:00  INFO 65572 --- [ms-servicios] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21T12:43:04.140-05:00  INFO 65572 --- [ms-servicios] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 3 JPA repository interfaces.
+2026-02-21T12:43:04.648-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd640676-63ec-3636-abcd-8fa180b89d65
+2026-02-21T12:43:05.427-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-02-21T12:43:05.448-05:00  INFO 65572 --- [ms-servicios] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-21T12:43:05.448-05:00  INFO 65572 --- [ms-servicios] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-21T12:43:05.556-05:00  INFO 65572 --- [ms-servicios] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2813 ms
+2026-02-21T12:43:06.126-05:00  INFO 65572 --- [ms-servicios] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-21T12:43:06.226-05:00  INFO 65572 --- [ms-servicios] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-21T12:43:06.840-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21T12:43:06.888-05:00  INFO 65572 --- [ms-servicios] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-21T12:43:07.105-05:00  INFO 65572 --- [ms-servicios] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d398cfb
+2026-02-21T12:43:07.107-05:00  INFO 65572 --- [ms-servicios] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-21T12:43:07.154-05:00  WARN 65572 --- [ms-servicios] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-21T12:43:07.190-05:00  INFO 65572 --- [ms-servicios] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/dbservicios]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -64,37 +64,37 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-21T03:03:56.502-05:00  INFO 39368 --- [ms-servicios] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-21T03:03:56.510-05:00  INFO 39368 --- [ms-servicios] [           main] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 20)
-2026-02-21T03:03:56.710-05:00  INFO 39368 --- [ms-servicios] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-21T03:03:57.255-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-21T03:03:59.115-05:00  WARN 39368 --- [ms-servicios] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-21T03:03:59.548-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-clientes' URL not provided. Will try picking an instance via load-balancing.
-2026-02-21T03:03:59.779-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-transportistas' URL not provided. Will try picking an instance via load-balancing.
-2026-02-21T03:04:04.354-05:00  INFO 39368 --- [ms-servicios] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
-2026-02-21T03:04:04.738-05:00  WARN 39368 --- [ms-servicios] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-02-21T03:04:04.800-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-02-21T03:04:05.115-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-02-21T03:04:05.230-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-02-21T03:04:05.278-05:00  INFO 39368 --- [ms-servicios] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-02-21T03:04:05.307-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-02-21T03:04:05.313-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-02-21T03:04:05.316-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-02-21T03:04:05.317-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-02-21T03:04:05.318-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-02-21T03:04:05.318-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-02-21T03:04:05.318-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-02-21T03:04:06.350-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-02-21T03:04:06.361-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-02-21T03:04:06.370-05:00  INFO 39368 --- [ms-servicios] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-02-21T03:04:06.375-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771661046375 with initial instances count: 5
-2026-02-21T03:04:06.411-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-SERVICIOS with eureka with status UP
-2026-02-21T03:04:06.414-05:00  INFO 39368 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771661046414, current=UP, previous=STARTING]
-2026-02-21T03:04:06.422-05:00  INFO 39368 --- [ms-servicios] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-SERVICIOS/LAPTOP-1RVSALIH.mshome.net:ms-servicios:8082: registering service...
-2026-02-21T03:04:06.476-05:00  INFO 39368 --- [ms-servicios] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
-2026-02-21T03:04:06.478-05:00  INFO 39368 --- [ms-servicios] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
-2026-02-21T03:04:06.520-05:00  INFO 39368 --- [ms-servicios] [           main] c.c.ms_servicios.MsServiciosApplication  : Started MsServiciosApplication in 25.935 seconds (process running for 27.917)
-2026-02-21T03:04:06.523-05:00  INFO 39368 --- [ms-servicios] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-SERVICIOS/LAPTOP-1RVSALIH.mshome.net:ms-servicios:8082 - registration status: 204
+2026-02-21T12:43:08.424-05:00  INFO 65572 --- [ms-servicios] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21T12:43:08.430-05:00  INFO 65572 --- [ms-servicios] [           main] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 20)
+2026-02-21T12:43:08.575-05:00  INFO 65572 --- [ms-servicios] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21T12:43:08.748-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-21T12:43:09.507-05:00  WARN 65572 --- [ms-servicios] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21T12:43:09.671-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-clientes' URL not provided. Will try picking an instance via load-balancing.
+2026-02-21T12:43:09.796-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'ms-transportistas' URL not provided. Will try picking an instance via load-balancing.
+2026-02-21T12:43:11.751-05:00  INFO 65572 --- [ms-servicios] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-02-21T12:43:11.879-05:00  WARN 65572 --- [ms-servicios] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-21T12:43:11.906-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21T12:43:12.027-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-21T12:43:12.057-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-21T12:43:12.063-05:00  INFO 65572 --- [ms-servicios] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:43:12.074-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-21T12:43:12.075-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-21T12:43:12.075-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-21T12:43:12.076-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-21T12:43:12.076-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-21T12:43:12.076-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-21T12:43:12.076-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-21T12:43:12.452-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-21T12:43:12.457-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-21T12:43:12.459-05:00  INFO 65572 --- [ms-servicios] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-21T12:43:12.462-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771695792460 with initial instances count: 5
+2026-02-21T12:43:12.475-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-SERVICIOS with eureka with status UP
+2026-02-21T12:43:12.476-05:00  INFO 65572 --- [ms-servicios] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771695792475, current=UP, previous=STARTING]
+2026-02-21T12:43:12.478-05:00  INFO 65572 --- [ms-servicios] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-SERVICIOS/LAPTOP-1RVSALIH.mshome.net:ms-servicios:8082: registering service...
+2026-02-21T12:43:12.501-05:00  INFO 65572 --- [ms-servicios] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-02-21T12:43:12.502-05:00  INFO 65572 --- [ms-servicios] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-02-21T12:43:12.523-05:00  INFO 65572 --- [ms-servicios] [           main] c.c.ms_servicios.MsServiciosApplication  : Started MsServiciosApplication in 10.164 seconds (process running for 10.622)
+2026-02-21T12:43:12.534-05:00  INFO 65572 --- [ms-servicios] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-SERVICIOS/LAPTOP-1RVSALIH.mshome.net:ms-servicios:8082 - registration status: 204
 Hibernate: 
     select
         sce1_0.category_id,
@@ -195,15 +195,39 @@ Hibernate:
         se1_0.weight 
     from
         shipments se1_0
-2026-02-21T03:04:13.700-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-21T03:04:13.705-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-21T03:04:13.714-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2026-02-21T12:43:31.547-05:00  INFO 65572 --- [ms-servicios] [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21T12:43:31.547-05:00  INFO 65572 --- [ms-servicios] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-21T12:43:31.550-05:00  INFO 65572 --- [ms-servicios] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: 
+    select
+        count(*) 
+    from
+        shipment_category sce1_0 
+    where
+        sce1_0.category_id=?
+Hibernate: 
+    select
+        se1_0.shipment_id 
+    from
+        shipments se1_0 
+    where
+        se1_0.category_id=? 
+    fetch
+        first ? rows only
 Hibernate: 
     select
         sce1_0.category_id,
         sce1_0.category_name 
     from
-        shipment_category sce1_0
+        shipment_category sce1_0 
+    where
+        sce1_0.category_id=?
+Hibernate: 
+    delete 
+    from
+        shipment_category 
+    where
+        category_id=?
 Hibernate: 
     select
         sse1_0.status_id,
@@ -240,12 +264,36 @@ Hibernate:
         sse1_0.status_id=?
 Hibernate: 
     select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0
+Hibernate: 
+    select
+        se1_0.shipment_id,
+        se1_0.at_date,
+        se1_0.category_id,
+        se1_0.client_id,
+        se1_0.created_at,
+        se1_0.description,
+        se1_0.destination,
+        se1_0.order_number,
+        se1_0.origin,
+        se1_0.price,
+        se1_0.status,
+        se1_0.status_id,
+        se1_0.transport_id,
+        se1_0.updated_at,
+        se1_0.volume,
+        se1_0.weight 
+    from
+        shipments se1_0
+Hibernate: 
+    select
         sse1_0.status_id,
         sse1_0.status_name 
     from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
+        shipment_status sse1_0
 Hibernate: 
     select
         sse1_0.status_id,
@@ -254,7 +302,24 @@ Hibernate:
         shipment_status sse1_0 
     where
         sse1_0.status_id=?
-2026-02-21T03:04:32.811-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-4] c.c.m.a.s.CreateShipmentServiceImpl      : Creating shipment, orderNumber=ORD-DEL-1771661072
+Hibernate: 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0
+Hibernate: 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0
+Hibernate: 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0
 Hibernate: 
     select
         count(*) 
@@ -264,173 +329,86 @@ Hibernate:
         sce1_0.category_id=?
 Hibernate: 
     select
-        sse1_0.status_id,
-        sse1_0.status_name 
+        count(*) 
     from
-        shipment_status sse1_0 
+        shipment_category sce1_0 
     where
-        sse1_0.status_id=?
+        sce1_0.category_id=?
 Hibernate: 
     select
-        nextval('shipment_id_seq')
+        count(*) 
+    from
+        shipment_category sce1_0 
+    where
+        sce1_0.category_id=?
+Hibernate: 
+    select
+        se1_0.shipment_id 
+    from
+        shipments se1_0 
+    where
+        se1_0.category_id=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0 
+    where
+        upper(sce1_0.category_name)=upper(?)
+Hibernate: 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0
+Hibernate: 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
+    from
+        shipment_category sce1_0 
+    where
+        sce1_0.category_id=?
 Hibernate: 
     insert 
     into
-        shipments
-        (at_date, category_id, client_id, created_at, description, destination, order_number, origin, price, status, status_id, transport_id, updated_at, volume, weight, shipment_id) 
+        shipment_category
+        (category_name, category_id) 
     values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2026-02-21T03:04:34.310-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-4] c.c.m.i.m.adapter.ShipmentEventAdapter   : Publishing shipment created event id=15
-2026-02-21T03:04:34.345-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2026-02-21T03:04:34.499-05:00  INFO 39368 --- [ms-servicios] [nio-8082-exec-4] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#75a955bf:0/SimpleConnection@1c288f2a [delegate=amqp://admin@127.0.0.1:5672/, localPort=62767]
+        (?, ?)
 Hibernate: 
     select
         count(*) 
     from
-        shipments se1_0 
+        shipment_category sce1_0 
     where
-        se1_0.shipment_id=?
+        sce1_0.category_id=?
 Hibernate: 
     select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
+        se1_0.shipment_id 
     from
         shipments se1_0 
     where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0
+        se1_0.category_id=? 
+    fetch
+        first ? rows only
 Hibernate: 
     select
         sce1_0.category_id,
         sce1_0.category_name 
     from
-        shipment_category sce1_0
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
+        shipment_category sce1_0 
     where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
+        sce1_0.category_id=?
 Hibernate: 
     delete 
     from
-        shipments 
+        shipment_category 
     where
-        shipment_id=?
+        category_id=?
 Hibernate: 
     select
         sce1_0.category_id,
@@ -473,55 +451,32 @@ Hibernate:
         sse1_0.status_id=?
 Hibernate: 
     select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
         count(*) 
     from
-        shipments se1_0 
+        shipment_category sce1_0 
     where
-        se1_0.shipment_id=?
+        sce1_0.category_id=?
 Hibernate: 
     select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
+        se1_0.shipment_id 
     from
         shipments se1_0 
     where
-        se1_0.shipment_id=?
+        se1_0.category_id=? 
+    fetch
+        first ? rows only
 Hibernate: 
-    delete 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
     from
-        shipments 
-    where
-        shipment_id=?
+        shipment_category sce1_0
+Hibernate: 
+    select
+        sse1_0.status_id,
+        sse1_0.status_name 
+    from
+        shipment_status sse1_0
 Hibernate: 
     select
         se1_0.shipment_id,
@@ -550,57 +505,36 @@ Hibernate:
         shipment_status sse1_0 
     where
         sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
+2026-02-21T12:48:12.084-05:00  INFO 65572 --- [ms-servicios] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 Hibernate: 
     select
         count(*) 
     from
-        shipments se1_0 
+        shipment_category sce1_0 
     where
-        se1_0.shipment_id=?
+        sce1_0.category_id=?
 Hibernate: 
     select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
+        se1_0.shipment_id 
     from
         shipments se1_0 
     where
-        se1_0.shipment_id=?
+        se1_0.category_id=? 
+    fetch
+        first ? rows only
+2026-02-21T12:53:12.118-05:00  INFO 65572 --- [ms-servicios] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 Hibernate: 
-    delete 
+    select
+        sce1_0.category_id,
+        sce1_0.category_name 
     from
-        shipments 
-    where
-        shipment_id=?
+        shipment_category sce1_0
+Hibernate: 
+    select
+        sse1_0.status_id,
+        sse1_0.status_name 
+    from
+        shipment_status sse1_0
 Hibernate: 
     select
         se1_0.shipment_id,
@@ -629,439 +563,36 @@ Hibernate:
         shipment_status sse1_0 
     where
         sse1_0.status_id=?
+2026-02-21T12:58:13.165-05:00  INFO 65572 --- [ms-servicios] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 Hibernate: 
     select
         sse1_0.status_id,
         sse1_0.status_name 
     from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        count(*) 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0 
-    where
-        se1_0.shipment_id=?
-Hibernate: 
-    delete 
-    from
-        shipments 
-    where
-        shipment_id=?
-Hibernate: 
-    select
-        se1_0.shipment_id,
-        se1_0.at_date,
-        se1_0.category_id,
-        se1_0.client_id,
-        se1_0.created_at,
-        se1_0.description,
-        se1_0.destination,
-        se1_0.order_number,
-        se1_0.origin,
-        se1_0.price,
-        se1_0.status,
-        se1_0.status_id,
-        se1_0.transport_id,
-        se1_0.updated_at,
-        se1_0.volume,
-        se1_0.weight 
-    from
-        shipments se1_0
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    select
-        sse1_0.status_id,
-        sse1_0.status_name 
-    from
-        shipment_status sse1_0 
-    where
-        sse1_0.status_id=?
-Hibernate: 
-    selec
+        shipment_status sse1_0
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18:51 min
+[INFO] Finished at: 2026-02-21T13:01:45-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.2:run (default-cli) on project ms-servicios: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:39 h
+[INFO] Finished at: 2026-02-21T12:42:52-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.2:run (default-cli) on project ms-servicios: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

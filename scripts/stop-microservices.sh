@@ -57,7 +57,7 @@ stop_service() {
 stop_rabbitmq() {
   if command -v docker >/dev/null 2>&1; then
     if [[ -f "$ROOT_DIR/docker/docker-compose.yml" ]]; then
-      echo "[infra] Bajando RabbitMQ (docker compose down)..."
+      echo "[infra] Bajando infraestructura (PostgreSQL + RabbitMQ)..."
       (
         cd "$ROOT_DIR/docker"
         docker compose down

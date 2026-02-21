@@ -923,3 +923,294 @@ Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,c
 Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
 2026-02-21T02:20:39.242-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2026-02-21T02:25:39.254-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:30:39.259-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+2026-02-21T02:35:39.271-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T02:40:39.275-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:45:39.278-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T02:50:39.288-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+2026-02-21T02:55:39.303-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T03:00:39.311-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1 and ce1_0.id=?
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T03:05:39.327-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T03:10:39.339-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:27:33.214-05:00  WARN 57264 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h12m55s523ms814µs400ns).
+2026-02-21T12:28:12.284-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T12:33:12.292-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:38:12.301-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T12:43:12.305-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T12:48:12.314-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:53:12.318-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T12:58:13.350-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T13:03:13.358-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T13:08:13.362-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T13:13:13.367-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:19:41.240-05:00  WARN 57264 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m36s407ms252µs600ns).
+2026-02-21T14:22:41.385-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:23:03.801-05:00  WARN 57264 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m22s561ms325µs100ns).
+2026-02-21T14:27:41.389-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:32:41.391-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:37:41.397-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:42:41.411-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T14:47:41.424-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T14:49:13.386-05:00  WARN 57264 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@63b36340 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.861-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1ddd2c6c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.862-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@54a3352d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.863-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@17d99694 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.864-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6d0e6023 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.864-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@19c48fa2 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.865-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5403cbea (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.867-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@f359ac8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.868-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@11a4ec75 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.870-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2ca0d87c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T14:49:14.907-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-02-21T14:49:14.908-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-3] org.hibernate.orm.jdbc.error             : ERROR: relation "clients" does not exist
+  Position: 117
+2026-02-21T14:49:14.977-05:00 ERROR 57264 --- [ms-clientes] [nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [ERROR: relation "clients" does not exist
+  Position: 117] [select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1]; SQL [select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1]] with root cause
+
+org.postgresql.util.PSQLException: ERROR: relation "clients" does not exist
+  Position: 117
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2846) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2531) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139) ~[postgresql-42.7.9.jar:42.7.9]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:271) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:190) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:71) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValues(JdbcSelectExecutorStandardImpl.java:393) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:354) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:135) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:128) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:427) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:355) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:374) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:121) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:464) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy145.findAll(Unknown Source) ~[na:na]
+	at core.cibertec.ms_clientes.infrastructure.persistence.adapter.ClientPersistenceAdapter.findByFilters(ClientPersistenceAdapter.java:57) ~[classes/:na]
+	at core.cibertec.ms_clientes.application.usecase.GetClientsUseCaseImpl.getClients(GetClientsUseCaseImpl.java:20) ~[classes/:na]
+	at core.cibertec.ms_clientes.infrastructure.controller.ClientController.getClients(ClientController.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T14:49:25.774-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-4] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-02-21T14:49:25.774-05:00  WARN 57264 --- [ms-clientes] [nio-8081-exec-4] org.hibernate.orm.jdbc.error             : ERROR: relation "clients" does not exist
+  Position: 117
+2026-02-21T14:49:25.786-05:00 ERROR 57264 --- [ms-clientes] [nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [ERROR: relation "clients" does not exist
+  Position: 117] [select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1]; SQL [select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1]] with root cause
+
+org.postgresql.util.PSQLException: ERROR: relation "clients" does not exist
+  Position: 117
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2846) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2531) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139) ~[postgresql-42.7.9.jar:42.7.9]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:271) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:190) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:71) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValues(JdbcSelectExecutorStandardImpl.java:393) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:354) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:135) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:128) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:427) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:355) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:374) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:121) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:464) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy145.findAll(Unknown Source) ~[na:na]
+	at core.cibertec.ms_clientes.infrastructure.persistence.adapter.ClientPersistenceAdapter.findByFilters(ClientPersistenceAdapter.java:57) ~[classes/:na]
+	at core.cibertec.ms_clientes.application.usecase.GetClientsUseCaseImpl.getClients(GetClientsUseCaseImpl.java:20) ~[classes/:na]
+	at core.cibertec.ms_clientes.infrastructure.controller.ClientController.getClients(ClientController.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-21T14:52:41.440-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:57:41.455-05:00  INFO 57264 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17:17 h
+[INFO] Finished at: 2026-02-21T14:58:25-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.2:run (default-cli) on project ms-clientes: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
