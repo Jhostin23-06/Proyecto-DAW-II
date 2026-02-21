@@ -7,4 +7,5 @@ import java.util.List;
 public interface StatusPersistencePort {
     List<Status> findAllStatuses();
     Status createStatus(String statusName);
+    boolean deleteById(Long statusId);
 }

@@ -27,4 +27,18 @@ public class GlobalExceptionHandler {
         body.put("path", request.getRequestURI());
         return ResponseEntity.badRequest().body(body);
     }
+
+    @ExceptionHandler(IllegalStateException.class)
+    public ResponseEntity<Map<String, Object>> handleConflict(
+            IllegalStateException ex,
+            HttpServletRequest request
+    ) {
+        Map<String, Object> body = new LinkedHashMap<>();
+        body.put("timestamp", Instant.now().toString());
+        body.put("status", HttpStatus.CONFLICT.value());
+        body.put("error", "Conflict");
+        body.put("message", ex.getMessage());
+        body.put("path", request.getRequestURI());
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(body);
+    }
 }

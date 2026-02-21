@@ -11,4 +11,6 @@ public interface ShipmentRepository extends JpaRepository<ShipmentEntity, Long> 
     List<ShipmentEntity> findByOrderNumber(String orderNumber);
     List<ShipmentEntity> findByTransportId(String transportId);
     List<ShipmentEntity> findByTransportIdIn(List<String> transportIds);
+    boolean existsByCategoryId(Long categoryId);
+    boolean existsByStatusRef_StatusId(Long statusId);
 }

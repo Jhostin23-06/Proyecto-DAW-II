@@ -8,4 +8,5 @@ public interface CategoryPersistencePort {
     List<Category> findAllCategories();
     Category createCategory(String categoryName);
     boolean existsById(Long categoryId);
+    boolean deleteById(Long categoryId);
 }

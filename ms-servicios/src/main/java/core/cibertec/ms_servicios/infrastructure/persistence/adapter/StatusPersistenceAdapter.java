@@ -3,6 +3,7 @@ package core.cibertec.ms_servicios.infrastructure.persistence.adapter;
 import core.cibertec.ms_servicios.application.port.outservice.StatusPersistencePort;
 import core.cibertec.ms_servicios.domain.bean.Status;
 import core.cibertec.ms_servicios.infrastructure.persistence.entity.ShipmentStatusEntity;
+import core.cibertec.ms_servicios.infrastructure.persistence.repository.ShipmentRepository;
 import core.cibertec.ms_servicios.infrastructure.persistence.repository.ShipmentStatusRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -15,6 +16,7 @@ import java.util.List;
 public class StatusPersistenceAdapter implements StatusPersistencePort {
 
     private final ShipmentStatusRepository shipmentStatusRepository;
+    private final ShipmentRepository shipmentRepository;
 
     @Override
     public List<Status> findAllStatuses() {
@@ -40,5 +42,17 @@ public class StatusPersistenceAdapter implements StatusPersistencePort {
                 new ShipmentStatusEntity(nextId, statusName.trim().toUpperCase())
         );
         return new Status(saved.getStatusId(), saved.getStatusName());
+    }
+
+    @Override
+    public boolean deleteById(Long statusId) {
+        if (!shipmentStatusRepository.existsById(statusId)) {
+            return false;
+        }
+        if (shipmentRepository.existsByStatusRef_StatusId(statusId)) {
+            throw new IllegalStateException("Status is in use by one or more shipments");
+        }
+        shipmentStatusRepository.deleteById(statusId);
+        return true;
     }
 }

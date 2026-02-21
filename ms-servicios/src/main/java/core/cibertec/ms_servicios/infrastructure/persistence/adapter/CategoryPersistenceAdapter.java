@@ -3,6 +3,7 @@ package core.cibertec.ms_servicios.infrastructure.persistence.adapter;
 import core.cibertec.ms_servicios.application.port.outservice.CategoryPersistencePort;
 import core.cibertec.ms_servicios.domain.bean.Category;
 import core.cibertec.ms_servicios.infrastructure.persistence.entity.ShipmentCategoryEntity;
+import core.cibertec.ms_servicios.infrastructure.persistence.repository.ShipmentRepository;
 import core.cibertec.ms_servicios.infrastructure.persistence.repository.ShipmentCategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -15,6 +16,7 @@ import java.util.List;
 public class CategoryPersistenceAdapter implements CategoryPersistencePort {
 
     private final ShipmentCategoryRepository shipmentCategoryRepository;
+    private final ShipmentRepository shipmentRepository;
 
     @Override
     public List<Category> findAllCategories() {
@@ -45,5 +47,17 @@ public class CategoryPersistenceAdapter implements CategoryPersistencePort {
     @Override
     public boolean existsById(Long categoryId) {
         return shipmentCategoryRepository.existsById(categoryId);
+    }
+
+    @Override
+    public boolean deleteById(Long categoryId) {
+        if (!shipmentCategoryRepository.existsById(categoryId)) {
+            return false;
+        }
+        if (shipmentRepository.existsByCategoryId(categoryId)) {
+            throw new IllegalStateException("Category is in use by one or more shipments");
+        }
+        shipmentCategoryRepository.deleteById(categoryId);
+        return true;
     }
 }
