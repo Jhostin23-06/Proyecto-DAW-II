@@ -51,8 +51,20 @@ public class UpdateTransportServiceImpl implements UpdateTransportPort {
 
     @Override
     public TransportResponse assignToUser(String id, String userId) {
+        if (userId == null || userId.trim().isEmpty()) {
+            throw new IllegalArgumentException("userId es requerido para asignar transporte");
+        }
+
+        TransportResponse existing = transportPersistencePort.findById(id);
+        boolean available = Boolean.TRUE.equals(existing.getAvailable());
+        if (!available) {
+            throw new IllegalStateException(
+                    String.format("El transporte %s no esta disponible para asignacion", id)
+            );
+        }
+
         TransportRequest request = new TransportRequest();
-        request.setTransportUserId(userId);
+        request.setTransportUserId(userId.trim());
         return transportPersistencePort.update(id, request);
     }
 
