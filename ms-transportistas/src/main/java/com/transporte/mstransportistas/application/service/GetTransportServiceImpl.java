@@ -19,7 +19,7 @@ public class GetTransportServiceImpl implements GetTransportPort {
     private final TransportPersistencePort transportPersistencePort;
 
     @Override
-    public TransportResponse getTransportById(Long id) {
+    public TransportResponse getTransportById(String id) {
         log.debug("Obteniendo transporte por ID: {}", id);
         TransportResponse response = transportPersistencePort.findById(id);
         if (response == null) {
@@ -47,7 +47,7 @@ public class GetTransportServiceImpl implements GetTransportPort {
     }
 
     @Override
-    public List<TransportResponse> getTransportsByUserId(Long userId) {
+    public List<TransportResponse> getTransportsByUserId(String userId) {
         log.debug("Obteniendo transportes por usuario ID: {}", userId);
         return transportPersistencePort.findByUserId(userId);
     }

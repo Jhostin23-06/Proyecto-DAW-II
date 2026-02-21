@@ -7,9 +7,9 @@ import java.util.List;
 
 @Component
 public interface GetTransportPort {
-    TransportResponse getTransportById(Long id);
+    TransportResponse getTransportById(String id);
     List<TransportResponse> getAllTransports();
     List<TransportResponse> getTransportsByStatus(String status);
     List<TransportResponse> getAvailableTransports();
-    List<TransportResponse> getTransportsByUserId(Long userId);
+    List<TransportResponse> getTransportsByUserId(String userId);
 }

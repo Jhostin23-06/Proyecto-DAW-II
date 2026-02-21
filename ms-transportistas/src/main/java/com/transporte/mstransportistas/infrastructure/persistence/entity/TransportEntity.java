@@ -25,13 +25,13 @@ public class TransportEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "transport_seq")
+    @GeneratedValue(strategy = GenerationType.UUID, generator = "transport_seq")
     @SequenceGenerator(name = "transport_seq", sequenceName = "transport_id_seq", allocationSize = 1)
     @Column(name = "transport_id")
-    private Long transportId;
+    private String transportId;
 
-    @Column(name = "transport_user_id", nullable = false)
-    private Long transportUserId;
+    @Column(name = "transport_user_id")
+    private String transportUserId;
 
     @Column(name = "transport_type", nullable = false, length = 50)
     private String transportType;

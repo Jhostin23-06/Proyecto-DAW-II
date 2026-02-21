@@ -18,7 +18,7 @@ public class UpdateTransportServiceImpl implements UpdateTransportPort {
     private final TransportModel transportModel;
 
     @Override
-    public TransportResponse updateTransport(Long id, TransportRequest request) {
+    public TransportResponse updateTransport(String id, TransportRequest request) {
         log.info("Actualizando transporte con ID: {}", id);
 
         // 1. Validar datos de actualización
@@ -50,7 +50,14 @@ public class UpdateTransportServiceImpl implements UpdateTransportPort {
     }
 
     @Override
-    public void deactivateTransport(Long id) {
+    public TransportResponse assignToUser(String id, String userId) {
+        TransportRequest request = new TransportRequest();
+        request.setTransportUserId(userId);
+        return transportPersistencePort.update(id, request);
+    }
+
+    @Override
+    public void deactivateTransport(String id) {
         log.info("Desactivando transporte con ID: {}", id);
 
         // 1. Verificar que existe

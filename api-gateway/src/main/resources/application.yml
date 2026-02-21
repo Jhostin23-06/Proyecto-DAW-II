@@ -6,19 +6,55 @@ spring:
     name: api-gateway
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4200"  # o la URL de tu frontend
+              - "http://127.0.0.1:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PATCH
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+            maxAge: 3600
       discovery:
         locator:
-          enabled: true               # Habilita rutas automáticas
-          lower-case-service-id: true # Usa minúsculas en las rutas
+          enabled: true               # Habilita rutas automï¿½ticas
+          lower-case-service-id: true # Usa minï¿½sculas en las rutas
       routes:
         - id: transportistas-service
           uri: lb://ms-transportistas   # Nombre del servicio en Eureka
           predicates:
             - Path=/api/transports/**
-#        Incluir los demás servicios
+        - id: users-service
+          uri: lb://ms-users          # Nombre del servicio en Eureka
+          predicates:
+            - Path=/api/users/**
+        - id: auth-service
+          uri: lb://ms-users
+          predicates:
+            - Path=/api/auth/**
+        - id: clients-service
+          uri: lb://ms-clientes
+          predicates:
+            - Path=/api/clients/**
+#        Incluir los demï¿½s servicios
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
     instance-id: ${spring.application.name}:${random.value}
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web: DEBUG
+    reactor.netty.http.client: DEBUG
+    com.netflix.discovery: DEBUG

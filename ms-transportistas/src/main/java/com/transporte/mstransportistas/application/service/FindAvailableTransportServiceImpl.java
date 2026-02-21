@@ -86,6 +86,6 @@ public class FindAvailableTransportServiceImpl implements FindAvailableTransport
         }
 
         // Comparar por ID (más bajo primero)
-        return Long.compare(t1.getTransportId(), t2.getTransportId());
+        return t1.getTransportId().compareTo(t2.getTransportId());
     }
 }

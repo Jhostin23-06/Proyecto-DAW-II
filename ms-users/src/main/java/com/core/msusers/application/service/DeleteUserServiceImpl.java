@@ -14,7 +14,7 @@ public class DeleteUserServiceImpl implements DeleteUserPort {
     private final UserPersistencePort userPersistencePort;
 
     @Override
-    public void deleteUser(Long id) {
+    public void deleteUser(String id) {
         log.info("Eliminando usuario con ID: {}", id);
         if (!userPersistencePort.existsById(id)) {
             throw new RuntimeException("Usuario no encontrado con ID: " + id);

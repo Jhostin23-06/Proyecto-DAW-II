@@ -8,15 +8,15 @@ import java.util.List;
 @Component
 public interface TransportPersistencePort {
     TransportResponse save(TransportRequest request);
-    TransportResponse findById(Long id);
+    TransportResponse findById(String id);
     List<TransportResponse> findAll();
     List<TransportResponse> findByStatus(String status);
     List<TransportResponse> findAvailableTransports();
-    List<TransportResponse> findByUserId(Long userId);
-    TransportResponse updateStatus(Long id, String status, String location);
+    List<TransportResponse> findByUserId(String userId);
+    TransportResponse updateStatus(String id, String status, String location);
     boolean existsByLicensePlate(String licensePlate);
-    void deactivate(Long id);
-    TransportResponse update(Long id, TransportRequest request);
-    boolean existsById(Long id);
+    void deactivate(String id);
+    TransportResponse update(String id, TransportRequest request);
+    boolean existsById(String id);
     List<TransportResponse> findSuitableTransports(Double requiredCapacity, String location);
 }

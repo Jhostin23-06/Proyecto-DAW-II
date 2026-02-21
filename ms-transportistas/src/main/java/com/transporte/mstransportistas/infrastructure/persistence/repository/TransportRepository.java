@@ -10,13 +10,17 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface TransportRepository extends JpaRepository<TransportEntity, Long> {
+public interface TransportRepository extends JpaRepository<TransportEntity, String> {
 
     List<TransportEntity> findByTransportStatus(String status);
 
     List<TransportEntity> findByTransportStatusAndActiveTrue(String status);
 
-    List<TransportEntity> findByTransportUserId(Long userId);
+    Optional<TransportEntity> findById(String id);
+
+    List<TransportEntity> findByTransportUserId(String userId);
+
+    boolean existsById(String id);
 
     Optional<TransportEntity> findByTransportLicensePlate(String licensePlate);
 
@@ -35,6 +39,6 @@ public interface TransportRepository extends JpaRepository<TransportEntity, Long
             "AND (:status IS NULL OR t.transportStatus = :status) " +
             "AND (:userId IS NULL OR t.transportUserId = :userId)")
     List<TransportEntity> findByFilters(@Param("status") String status,
-                                        @Param("userId") Long userId);
+                                        @Param("userId") String userId);
 
 }

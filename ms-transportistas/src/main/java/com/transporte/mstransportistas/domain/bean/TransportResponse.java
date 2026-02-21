@@ -15,8 +15,8 @@ public class TransportResponse implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Long transportId;
-    private Long transportUserId;
+    private String transportId;
+    private String transportUserId;
     private String transportType;
     private Double transportCapacity;
     private String transportStatus;

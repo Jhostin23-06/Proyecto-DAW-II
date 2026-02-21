@@ -20,8 +20,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        UserResponse user = userPersistencePort.findByEmail(email)
-                .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado con email: " + email));
+        UserResponse user = userPersistencePort.findByEmail(email);
 
         return new User(
                 user.getUserEmail(),

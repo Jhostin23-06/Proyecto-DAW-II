@@ -20,7 +20,7 @@ public class UpdateUserServiceImpl implements UpdateUserPort {
     private final PasswordEncoder passwordEncoder;
 
     @Override
-    public UserResponse updateUser(Long id, UserRequest request) {
+    public UserResponse updateUser(String id, UserRequest request) {
         log.info("Actualizando usuario con ID: {}", id);
 
         // 1. Validar datos de actualización
@@ -50,7 +50,7 @@ public class UpdateUserServiceImpl implements UpdateUserPort {
     }
 
     @Override
-    public void deactivateUser(Long id) {
+    public void deactivateUser(String id) {
         log.info("Desactivando usuario con ID: {}", id);
         if (!userPersistencePort.existsById(id)) {
             throw new RuntimeException("Usuario no encontrado con ID: " + id);

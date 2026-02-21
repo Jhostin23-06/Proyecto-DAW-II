@@ -44,7 +44,7 @@ public class TransportEventAdapter implements TransportEventPort {
     }
 
     @Override
-    public void publishTransportStatusChanged(Long transportId, String oldStatus, String newStatus, String reason) {
+    public void publishTransportStatusChanged(String transportId, String oldStatus, String newStatus, String reason) {
         try {
             log.info("Publicando evento de cambio de estado: {} -> {}", oldStatus, newStatus);
 
@@ -68,7 +68,7 @@ public class TransportEventAdapter implements TransportEventPort {
     }
 
     @Override
-    public void publishTransportAssigned(Long transportId, Long shipmentId) {
+    public void publishTransportAssigned(String transportId, Long shipmentId) {
         try {
             log.info("Publicando evento de transporte asignado: transportId={}, shipmentId={}",
                     transportId, shipmentId);
@@ -91,7 +91,7 @@ public class TransportEventAdapter implements TransportEventPort {
     }
 
     private record StatusChangeEvent(
-            Long transportId,
+            String transportId,
             String oldStatus,
             String newStatus,
             String reason,
@@ -99,7 +99,7 @@ public class TransportEventAdapter implements TransportEventPort {
     ) {}
 
     private record AssignmentEvent(
-            Long transportId,
+            String transportId,
             Long shipmentId,
             long timestamp
     ) {}

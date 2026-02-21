@@ -35,15 +35,16 @@ public class UserPersistenceAdapter implements UserPersistencePort {
     }
 
     @Override
-    public Optional<UserResponse> findById(Long id) {
+    public Optional<UserResponse> findById(String id) {
         return userRepository.findById(id)
                 .map(this::toResponse);
     }
 
     @Override
-    public Optional<UserResponse> findByEmail(String email) {
+    public UserResponse findByEmail(String email) {
         return userRepository.findByUserEmail(email)
-                .map(this::toResponse);
+                .map(this::toResponse)
+                .orElse(null);
     }
 
     @Override
@@ -55,13 +56,13 @@ public class UserPersistenceAdapter implements UserPersistencePort {
 
     @Override
     public List<UserResponse> findByRole(String role) {
-        return userRepository.findByUserRole(role).stream()
+        return userRepository.findByUserRoleAndActiveTrue(role).stream()
                 .map(this::toResponse)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public UserResponse update(Long id, UserRequest request) {
+    public UserResponse update(String id, UserRequest request) {
         UserEntity entity = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));
 
@@ -84,7 +85,7 @@ public class UserPersistenceAdapter implements UserPersistencePort {
     }
 
     @Override
-    public void deactivate(Long id) {
+    public void deactivate(String id) {
         UserEntity entity = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
         entity.setActive(false);
@@ -98,7 +99,7 @@ public class UserPersistenceAdapter implements UserPersistencePort {
     }
 
     @Override
-    public boolean existsById(Long id) {
+    public boolean existsById(String id) {
         return userRepository.existsById(id);
     }
 
