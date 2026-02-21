@@ -1,0 +1,98 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.transporte:ms-clientes >---------------------
+[INFO] Building ms-clientes 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.2:run (default-cli) > test-compile @ ms-clientes >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ms-clientes ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ms-clientes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ms-clientes ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ ms-clientes ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] <<< spring-boot:4.0.2:run (default-cli) < test-compile @ ms-clientes <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.2:run (default-cli) @ ms-clientes ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-02-21T14:59:32.966-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : Starting MsClientesApplication using Java 21.0.10 with PID 60864 (C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-clientes\target\classes started by jhost in C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-clientes)
+2026-02-21T14:59:32.975-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-21T14:59:33.053-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-21T14:59:33.053-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-21T14:59:34.150-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21T14:59:34.396-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 232 ms. Found 1 JPA repository interface.
+2026-02-21T14:59:34.866-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eaff62b7-06a5-313a-88e7-6f920e77cb35
+2026-02-21T14:59:35.739-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-02-21T14:59:35.809-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-21T14:59:35.812-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-21T14:59:35.982-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2926 ms
+2026-02-21T14:59:36.312-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-21T14:59:36.485-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-21T14:59:37.797-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21T14:59:37.861-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-21T14:59:38.113-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ac3b4c6
+2026-02-21T14:59:38.146-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-21T14:59:38.283-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/clientes_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.12
+	Default catalog/schema: clientes_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21T14:59:40.092-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table clients (id bigint generated by default as identity, address varchar(255), company_code varchar(11) not null, company_name varchar(255) not null, contact_name varchar(255), email varchar(255), phone varchar(255), primary key (id))
+Hibernate: alter table if exists clients drop constraint if exists uk_clients_company_code
+2026-02-21T14:59:40.234-05:00  WARN 60864 --- [ms-clientes] [  restartedMain] org.hibernate.orm.jdbc.warn              : HHH000247: ErrorCode: 0, SQLState: 00000
+2026-02-21T14:59:40.235-05:00  WARN 60864 --- [ms-clientes] [  restartedMain] org.hibernate.orm.jdbc.warn              : constraint "uk_clients_company_code" of relation "clients" does not exist, skipping
+Hibernate: alter table if exists clients add constraint uk_clients_company_code unique (company_code)
+2026-02-21T14:59:40.247-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21T14:59:40.431-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-21T14:59:41.604-05:00  WARN 60864 --- [ms-clientes] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21T14:59:42.209-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-02-21T14:59:42.369-05:00  WARN 60864 --- [ms-clientes] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-21T14:59:42.435-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-21T14:59:42.477-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-21T14:59:42.532-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:59:42.555-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-21T14:59:42.561-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-21T14:59:42.562-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-21T14:59:42.563-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-21T14:59:42.563-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-21T14:59:42.564-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-21T14:59:42.564-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-21T14:59:43.336-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-21T14:59:43.344-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-21T14:59:43.348-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-21T14:59:43.351-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771703983350 with initial instances count: 1
+2026-02-21T14:59:43.360-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-CLIENTES with eureka with status UP
+2026-02-21T14:59:43.364-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771703983364, current=UP, previous=STARTING]
+2026-02-21T14:59:43.367-05:00  INFO 60864 --- [ms-clientes] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CLIENTES/LAPTOP-1RVSALIH.mshome.net:ms-clientes:8081: registering service...
+2026-02-21T14:59:43.400-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-02-21T14:59:43.403-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-21T14:59:43.429-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : Started MsClientesApplication in 11.069 seconds (process running for 12.011)
+2026-02-21T14:59:43.446-05:00  INFO 60864 --- [ms-clientes] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CLIENTES/LAPTOP-1RVSALIH.mshome.net:ms-clientes:8081 - registration status: 204

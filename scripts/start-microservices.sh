@@ -52,15 +52,16 @@ start_service() {
 
 start_rabbitmq() {
   if command -v docker >/dev/null 2>&1; then
-    echo "[infra] Levantando RabbitMQ..."
+    echo "[infra] Levantando infraestructura (PostgreSQL + RabbitMQ)..."
     (
       cd "$ROOT_DIR/docker"
       docker compose up -d
     )
+    wait_for_port "localhost" "5432" "postgresql"
     wait_for_port "localhost" "5672" "rabbitmq"
     wait_for_port "localhost" "15672" "rabbitmq-management"
   else
-    echo "[warn] Docker no encontrado. Se asume RabbitMQ ya esta corriendo en localhost:5672"
+    echo "[warn] Docker no encontrado. Se asume PostgreSQL y RabbitMQ ya estan corriendo localmente"
   fi
 }
 

@@ -238,3 +238,463 @@ Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.tran
 Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
 2026-02-21T02:21:07.531-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2026-02-21T02:26:07.544-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:31:07.556-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_id=?
+2026-02-21T02:33:18.755-05:00 ERROR 69148 --- [ms-transportistas] [nio-8083-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Transporte no encontrado con ID: not-exists-uuid] with root cause
+
+java.lang.RuntimeException: Transporte no encontrado con ID: not-exists-uuid
+	at com.transporte.mstransportistas.infrastructure.persistence.adapter.TransportPersistenceAdapter.lambda$findById$0(TransportPersistenceAdapter.java:59) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.transporte.mstransportistas.infrastructure.persistence.adapter.TransportPersistenceAdapter.findById(TransportPersistenceAdapter.java:59) ~[classes/:na]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl.getTransportById(GetTransportServiceImpl.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.3.jar:7.0.3]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl$$SpringCGLIB$$0.getTransportById(<generated>) ~[classes/:na]
+	at com.transporte.mstransportistas.infrastructure.controller.TransportController.getTransportById(TransportController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-21T02:36:07.568-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_id=?
+2026-02-21T02:36:31.898-05:00 ERROR 69148 --- [ms-transportistas] [nio-8083-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Transporte no encontrado con ID: not-exists-uuid] with root cause
+
+java.lang.RuntimeException: Transporte no encontrado con ID: not-exists-uuid
+	at com.transporte.mstransportistas.infrastructure.persistence.adapter.TransportPersistenceAdapter.lambda$findById$0(TransportPersistenceAdapter.java:59) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.transporte.mstransportistas.infrastructure.persistence.adapter.TransportPersistenceAdapter.findById(TransportPersistenceAdapter.java:59) ~[classes/:na]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl.getTransportById(GetTransportServiceImpl.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.3.jar:7.0.3]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl$$SpringCGLIB$$0.getTransportById(<generated>) ~[classes/:na]
+	at com.transporte.mstransportistas.infrastructure.controller.TransportController.getTransportById(TransportController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+2026-02-21T02:41:07.575-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:46:07.577-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_id=?
+Hibernate: update transports set is_active=?,transport_capacity=?,transport_company=?,transport_driver=?,transport_license_plate=?,transport_location=?,transport_status=?,transport_type=?,transport_user_id=?,updated_at=? where transport_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+2026-02-21T02:51:07.578-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T02:56:07.585-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T03:01:07.596-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T03:06:07.601-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+2026-02-21T03:11:07.605-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T03:53:35.379-05:00  WARN 69148 --- [ms-transportistas] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m1s783ms132µs100ns).
+2026-02-21T12:27:49.038-05:00  WARN 69148 --- [ms-transportistas] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h34m17s715ms919µs800ns).
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T12:28:40.553-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:33:40.559-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:38:40.566-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T12:43:40.577-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T12:48:40.582-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T12:53:41.621-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T12:58:41.626-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T13:03:41.636-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T13:08:41.646-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T13:13:41.653-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:22:39.286-05:00  WARN 69148 --- [ms-transportistas] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m48s671ms612µs100ns).
+2026-02-21T14:23:09.662-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:28:09.670-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:33:09.677-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:38:09.681-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:43:09.695-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T14:48:09.706-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.transport_user_id=?
+2026-02-21T14:49:10.945-05:00  WARN 69148 --- [ms-transportistas] [l-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@33052b40 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.861-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@52247308 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.862-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3ce0d8ca (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.864-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4ef881f2 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.864-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4357bb93 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.865-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@321a2cc2 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.866-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@88684c3 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-02-21T14:49:14.867-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@27b7330 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T14:49:14.893-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-02-21T14:49:14.893-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-9] org.hibernate.orm.jdbc.error             : ERROR: relation "transports" does not exist
+  Position: 277
+2026-02-21T14:49:14.919-05:00 ERROR 69148 --- [ms-transportistas] [nio-8083-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [ERROR: relation "transports" does not exist
+  Position: 277] [select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true]; SQL [select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true]] with root cause
+
+org.postgresql.util.PSQLException: ERROR: relation "transports" does not exist
+  Position: 277
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2846) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2531) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139) ~[postgresql-42.7.9.jar:42.7.9]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:271) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:190) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:71) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValues(JdbcSelectExecutorStandardImpl.java:393) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:354) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:135) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:128) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:427) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:355) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:374) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:121) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:132) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:99) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:164) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:154) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:167) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:137) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy151.findByActiveTrue(Unknown Source) ~[na:na]
+	at com.transporte.mstransportistas.infrastructure.persistence.adapter.TransportPersistenceAdapter.findAll(TransportPersistenceAdapter.java:64) ~[classes/:na]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl.getAllTransports(GetTransportServiceImpl.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.3.jar:7.0.3]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl$$SpringCGLIB$$0.getAllTransports(<generated>) ~[classes/:na]
+	at com.transporte.mstransportistas.infrastructure.controller.TransportController.getAllTransports(TransportController.java:52) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+Hibernate: select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true
+2026-02-21T14:49:25.774-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-4] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-02-21T14:49:25.774-05:00  WARN 69148 --- [ms-transportistas] [nio-8083-exec-4] org.hibernate.orm.jdbc.error             : ERROR: relation "transports" does not exist
+  Position: 277
+2026-02-21T14:49:25.780-05:00 ERROR 69148 --- [ms-transportistas] [nio-8083-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [ERROR: relation "transports" does not exist
+  Position: 277] [select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true]; SQL [select te1_0.transport_id,te1_0.is_active,te1_0.created_at,te1_0.transport_capacity,te1_0.transport_company,te1_0.transport_driver,te1_0.transport_license_plate,te1_0.transport_location,te1_0.transport_status,te1_0.transport_type,te1_0.transport_user_id,te1_0.updated_at from transports te1_0 where te1_0.is_active=true]] with root cause
+
+org.postgresql.util.PSQLException: ERROR: relation "transports" does not exist
+  Position: 277
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2846) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2531) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.9.jar:42.7.9]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139) ~[postgresql-42.7.9.jar:42.7.9]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:271) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:190) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:71) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValues(JdbcSelectExecutorStandardImpl.java:393) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:354) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:135) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:128) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:427) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:355) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:374) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:121) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:132) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:99) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:164) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:154) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:167) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:137) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy151.findByActiveTrue(Unknown Source) ~[na:na]
+	at com.transporte.mstransportistas.infrastructure.persistence.adapter.TransportPersistenceAdapter.findAll(TransportPersistenceAdapter.java:64) ~[classes/:na]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl.getAllTransports(GetTransportServiceImpl.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.3.jar:7.0.3]
+	at com.transporte.mstransportistas.application.service.GetTransportServiceImpl$$SpringCGLIB$$0.getAllTransports(<generated>) ~[classes/:na]
+	at com.transporte.mstransportistas.infrastructure.controller.TransportController.getAllTransports(TransportController.java:52) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-21T14:53:09.713-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:58:09.720-05:00  INFO 69148 --- [ms-transportistas] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17:17 h
+[INFO] Finished at: 2026-02-21T14:58:25-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.2:run (default-cli) on project ms-transportistas: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

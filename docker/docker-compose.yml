@@ -1,13 +1,31 @@
-# rabbitmq-simple/docker-compose.yml
-version: '3.8'
+﻿services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres-transportes
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
 
-services:
   rabbitmq:
-    image: rabbitmq:3-management-alpine 
+    image: rabbitmq:3-management-alpine
     container_name: rabbitmq-simple
     ports:
-      - "5672:5672"   
-      - "15672:15672"  
+      - "5672:5672"
+      - "15672:15672"
     environment:
-      RABBITMQ_DEFAULT_USER: admin      # Usuario
-      RABBITMQ_DEFAULT_PASS: admin   # Contraseña
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+
+volumes:
+  postgres-data:
