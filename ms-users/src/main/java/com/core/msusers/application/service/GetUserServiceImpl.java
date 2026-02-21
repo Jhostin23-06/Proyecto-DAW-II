@@ -18,7 +18,7 @@ public class GetUserServiceImpl implements GetUserPort {
 
 
     @Override
-    public UserResponse getUserById(Long id) {
+    public UserResponse getUserById(String id) {
         log.debug("Obteniendo usuario por ID: {}", id);
         return userPersistencePort.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));
@@ -27,8 +27,7 @@ public class GetUserServiceImpl implements GetUserPort {
     @Override
     public UserResponse getUserByEmail(String email) {
         log.debug("Obteniendo usuario por email: {}", email);
-        return userPersistencePort.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con email: " + email));
+        return userPersistencePort.findByEmail(email);
     }
 
     @Override

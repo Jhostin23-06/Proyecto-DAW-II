@@ -14,7 +14,7 @@ public class DeleteTransportServiceImpl implements DeleteTransportPort {
     private final TransportPersistencePort transportPersistencePort;
 
     @Override
-    public void deleteTransport(Long id) {
+    public void deleteTransport(String id) {
         log.info("Eliminando (desactivando) transporte con ID: {}", id);
 
         // Verificar que existe

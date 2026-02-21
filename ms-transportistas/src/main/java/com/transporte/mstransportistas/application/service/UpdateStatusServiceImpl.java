@@ -20,7 +20,7 @@ public class UpdateStatusServiceImpl implements UpdateStatusPort {
     private final TransportModel transportModel;
 
     @Override
-    public TransportResponse updateTransportStatus(Long id, String newStatusStr, String location, String reason) {
+    public TransportResponse updateTransportStatus(String id, String newStatusStr, String location, String reason) {
         log.info("Actualizando estado del transporte ID: {} a {}", id, newStatusStr);
 
         // Obtener transporte actual

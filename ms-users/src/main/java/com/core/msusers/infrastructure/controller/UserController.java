@@ -24,6 +24,14 @@ public class UserController {
     private final UpdateUserPort updateUserPort;
     private final DeleteUserPort deleteUserPort;
 
+    @PostMapping("/register")
+    public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRequest request) {
+        // Asegurar que el rol sea USER (evitar que alguien se auto-asigne ADMIN)
+        request.setUserRole("ADMIN");
+        UserResponse response = createUserPort.createUser(request);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+
     @PostMapping
     public ResponseEntity<UserResponse> createUser(@Valid @RequestBody UserRequest request) {
         UserResponse response = createUserPort.createUser(request);
@@ -31,7 +39,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<UserResponse> getUserById(@PathVariable Long id) {
+    public ResponseEntity<UserResponse> getUserById(@PathVariable String id) {
         UserResponse response = getUserPort.getUserById(id);
         return ResponseEntity.ok(response);
     }
@@ -56,14 +64,14 @@ public class UserController {
 
     @PutMapping("/{id}")
     public ResponseEntity<UserResponse> updateUser(
-            @PathVariable Long id,
+            @PathVariable String id,
             @Valid @RequestBody UserRequest request) {
         UserResponse response = updateUserPort.updateUser(id, request);
         return ResponseEntity.ok(response);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteUser(@PathVariable String id) {
         deleteUserPort.deleteUser(id);
         return ResponseEntity.noContent().build();
     }

@@ -13,7 +13,7 @@ public class TransportRequest implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Long transportUserId;
+    private String transportUserId;
     private String transportType;
     private Double transportCapacity;
     private String transportLocation;

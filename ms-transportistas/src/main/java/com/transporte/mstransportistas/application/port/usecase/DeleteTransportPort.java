@@ -4,5 +4,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface DeleteTransportPort {
-    void deleteTransport(Long id);
+    void deleteTransport(String id);
 }

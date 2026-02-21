@@ -1,6 +1,7 @@
 package com.transporte.mstransportistas.infrastructure.controller;
 
 import com.transporte.mstransportistas.application.port.usecase.*;
+import com.transporte.mstransportistas.domain.bean.AssignRequest;
 import com.transporte.mstransportistas.domain.bean.TransportRequest;
 import com.transporte.mstransportistas.domain.bean.TransportResponse;
 import com.transporte.mstransportistas.domain.bean.UpdateStatusRequest;
@@ -32,7 +33,7 @@ public class TransportController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TransportResponse> getTransportById(@PathVariable Long id) {
+    public ResponseEntity<TransportResponse> getTransportById(@PathVariable String id) {
         TransportResponse response = getTransportPort.getTransportById(id);
         return ResponseEntity.ok(response);
     }
@@ -40,7 +41,7 @@ public class TransportController {
     @GetMapping
     public ResponseEntity<List<TransportResponse>> getAllTransports(
             @RequestParam(required = false) String status,
-            @RequestParam(required = false) Long userId) {
+            @RequestParam(required = false) String userId) {
 
         List<TransportResponse> responses;
         if (status != null) {
@@ -67,7 +68,7 @@ public class TransportController {
 
     @PutMapping("/{id}/status")
     public ResponseEntity<TransportResponse> updateTransportStatus(
-            @PathVariable Long id,
+            @PathVariable String id,
             @Valid @RequestBody UpdateStatusRequest request) {
 
         TransportResponse response = updateStatusPort.updateTransportStatus(
@@ -82,7 +83,7 @@ public class TransportController {
     // PATCH - Actualizar ubicación
     @PatchMapping("/{id}/location")
     public ResponseEntity<TransportResponse> updateLocation(
-            @PathVariable Long id,
+            @PathVariable String id,
             @RequestParam String location) {
 
         // Crear request para actualizar solo ubicación
@@ -95,17 +96,25 @@ public class TransportController {
         return ResponseEntity.ok(response);
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<TransportResponse> updateTransport(
-            @PathVariable Long id,
+            @PathVariable String id,
             @Valid @RequestBody TransportRequest request) {
 
         TransportResponse response = updateTransportPort.updateTransport(id, request);
         return ResponseEntity.ok(response);
     }
 
+    @PatchMapping("/{id}/assign")
+    public ResponseEntity<TransportResponse> assignTransport(
+            @PathVariable String id,
+            @RequestBody AssignRequest request) {
+        TransportResponse response = updateTransportPort.assignToUser(id, request.getUserId());
+        return ResponseEntity.ok(response);
+    }
+
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteTransport(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteTransport(@PathVariable String id) {
         deleteTransportPort.deleteTransport(id);
         return ResponseEntity.noContent().build();
     }

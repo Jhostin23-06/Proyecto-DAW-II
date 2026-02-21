@@ -56,9 +56,9 @@ public class TransportModel implements TransportValidation, StatusTransitionVali
         if (request == null) {
             throw new IllegalArgumentException("Request no puede ser nulo");
         }
-        if (request.getTransportUserId() == null || request.getTransportUserId() <= 0) {
-            throw new IllegalArgumentException("transportUserId es requerido y debe ser positivo");
-        }
+//        if (request.getTransportUserId() == null) {
+//            throw new IllegalArgumentException("transportUserId es requerido.");
+//        }
         if (request.getTransportType() == null || request.getTransportType().trim().isEmpty()) {
             throw new IllegalArgumentException("transportType es requerido");
         }
@@ -66,13 +66,13 @@ public class TransportModel implements TransportValidation, StatusTransitionVali
             throw new IllegalArgumentException("Capacidad debe ser mayor que 0");
         }
         if (request.getTransportDriver() == null || request.getTransportDriver().trim().isEmpty()) {
-            throw new IllegalArgumentException("transportDriver es requerido");
+            throw new IllegalArgumentException("Chofer es requerido");
         }
         if (!validateLicensePlate(request.getTransportLicensePlate())) {
             throw new IllegalArgumentException("Placa inválida");
         }
         if (request.getTransportCompany() == null || request.getTransportCompany().trim().isEmpty()) {
-            throw new IllegalArgumentException("transportCompany es requerido");
+            throw new IllegalArgumentException("Compañía es requerida");
         }
         return true;
     }
@@ -83,8 +83,8 @@ public class TransportModel implements TransportValidation, StatusTransitionVali
         if (request == null) {
             throw new IllegalArgumentException("Request no puede ser nulo");
         }
-        if (request.getTransportUserId() != null && request.getTransportUserId() <= 0) {
-            throw new IllegalArgumentException("transportUserId debe ser positivo");
+        if (request.getTransportUserId() != null) {
+            throw new IllegalArgumentException("transportUserId no se puede actualizar");
         }
         if (request.getTransportCapacity() != null && !validateCapacity(request.getTransportCapacity())) {
             throw new IllegalArgumentException("Capacidad inválida");

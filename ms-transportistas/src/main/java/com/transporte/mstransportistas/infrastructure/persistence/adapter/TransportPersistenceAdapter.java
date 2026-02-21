@@ -52,10 +52,11 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     }
 
     @Override
-    public TransportResponse findById(Long id) {
+    public TransportResponse findById(String id) {
         return transportRepository.findById(id)
+                .filter(TransportEntity::getActive)
                 .map(this::toResponse)
-                .orElse(null);
+                .orElseThrow(() -> new RuntimeException("Transporte no encontrado con ID: " + id));
     }
 
     @Override
@@ -64,6 +65,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
                 .map(this::toResponse)
                 .collect(Collectors.toList());
     }
+
 
     @Override
     public List<TransportResponse> findByStatus(String status) {
@@ -80,14 +82,14 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     }
 
     @Override
-    public List<TransportResponse> findByUserId(Long userId) {
+    public List<TransportResponse> findByUserId(String userId) {
         return transportRepository.findByTransportUserId(userId).stream()
                 .map(this::toResponse)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public TransportResponse updateStatus(Long id, String status, String location) {
+    public TransportResponse updateStatus(String id, String status, String location) {
         TransportEntity entity = transportRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Transporte no encontrado con ID: " + id));
 
@@ -107,7 +109,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     }
 
     @Override
-    public void deactivate(Long id) {
+    public void deactivate(String id) {
         TransportEntity entity = transportRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Transporte no encontrado"));
         entity.setActive(false);
@@ -116,7 +118,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     }
 
     @Override
-    public TransportResponse update(Long id, TransportRequest request) {
+    public TransportResponse update(String id, TransportRequest request) {
         TransportEntity entity = transportRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Transporte no encontrado con ID: " + id));
 
@@ -136,13 +138,17 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
             entity.setTransportCompany(request.getTransportCompany());
         }
 
+        if (request.getTransportUserId() != null) {
+            entity.setTransportUserId(request.getTransportUserId());
+        }
+
         entity.setUpdatedAt(LocalDateTime.now());
         TransportEntity updated = transportRepository.save(entity);
         return toResponse(updated);
     }
 
     @Override
-    public boolean existsById(Long id) {
+    public boolean existsById(String id) {
         return transportRepository.existsById(id);
     }
 
