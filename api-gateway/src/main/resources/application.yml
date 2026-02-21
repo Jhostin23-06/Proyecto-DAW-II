@@ -44,6 +44,10 @@ spring:
           uri: lb://ms-clientes
           predicates:
             - Path=/api/clients/**
+        - id: shioments-service
+          uri: lb://ms-servicios
+          predicates:
+            - Path=/api/shipments/**
 #        Incluir los dem�s servicios
 eureka:
   client:

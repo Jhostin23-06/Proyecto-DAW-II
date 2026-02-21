@@ -1,0 +1,33 @@
+category
+    category_id
+    category_name
+
+status
+    status_id
+    status_name  
+
+shipment
+    shipment_id
+    category_id
+    description
+    price 
+    weight
+    volume
+    origin
+    destination
+    status_id
+    at_date
+    client_id
+    transport_id
+    order_number
+
+
+shipment_activity
+    shipment_activity_id
+    shipment_id
+    user_id
+    status_id
+    at_date
+
+
+

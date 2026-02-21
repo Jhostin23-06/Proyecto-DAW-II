@@ -2,7 +2,7 @@ spring:
   application:
     name: ms-servicios
   datasource:
-    url: jdbc:postgresql://localhost:5432/serviciosdb
+    url: jdbc:postgresql://localhost:5432/dbservicios
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
@@ -21,12 +21,15 @@ spring:
           batch_size: 20
         order_inserts: true
         order_updates: true
-        default_schema: servicios_schema
   rabbitmq:
     host: localhost
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
+    # Exchange / routing used by the service
+    exchange: services.exchange
+    routing:
+      shipment-created: services.shipment.created
 
   jackson:
     serialization:
@@ -41,4 +44,9 @@ feign:
         logger-level: basic
 server:
   port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 
