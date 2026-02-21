@@ -96,3 +96,7 @@ Hibernate: alter table if exists clients add constraint uk_clients_company_code 
 2026-02-21T14:59:43.403-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
 2026-02-21T14:59:43.429-05:00  INFO 60864 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : Started MsClientesApplication in 11.069 seconds (process running for 12.011)
 2026-02-21T14:59:43.446-05:00  INFO 60864 --- [ms-clientes] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CLIENTES/LAPTOP-1RVSALIH.mshome.net:ms-clientes:8081 - registration status: 204
+2026-02-21T15:01:43.256-05:00  INFO 60864 --- [ms-clientes] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21T15:01:43.258-05:00  INFO 60864 --- [ms-clientes] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-21T15:01:43.261-05:00  INFO 60864 --- [ms-clientes] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1

@@ -1,0 +1,133 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.core:ms-users >--------------------------
+[INFO] Building ms-users 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.10:run (default-cli) > test-compile @ ms-users >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ms-users ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ms-users ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ms-users ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ ms-users ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] <<< spring-boot:3.5.10:run (default-cli) < test-compile @ ms-users <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.10:run (default-cli) @ ms-users ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.10)
+
+2026-02-21T14:59:15.969-05:00  INFO 59488 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : Starting MsUsersApplication using Java 21.0.10 with PID 59488 (C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-users\target\classes started by jhost in C:\Users\jhost\Desktop\CIBERTEC\proyecto-transportes\ms-users)
+2026-02-21T14:59:16.014-05:00 DEBUG 59488 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : Running with Spring Boot v3.5.10, Spring v6.2.15
+2026-02-21T14:59:16.015-05:00  INFO 59488 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-02-21T14:59:16.961-05:00  INFO 59488 --- [ms-users] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21T14:59:17.147-05:00  INFO 59488 --- [ms-users] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175 ms. Found 1 JPA repository interface.
+2026-02-21T14:59:17.480-05:00  INFO 59488 --- [ms-users] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6ee6bf00-cdfd-3d56-bb83-4155e45b67c7
+2026-02-21T14:59:17.974-05:00  INFO 59488 --- [ms-users] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2026-02-21T14:59:17.992-05:00  INFO 59488 --- [ms-users] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-21T14:59:17.993-05:00  INFO 59488 --- [ms-users] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21T14:59:18.126-05:00  INFO 59488 --- [ms-users] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-21T14:59:18.128-05:00  INFO 59488 --- [ms-users] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2070 ms
+2026-02-21T14:59:18.356-05:00  INFO 59488 --- [ms-users] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21T14:59:18.435-05:00  INFO 59488 --- [ms-users] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21T14:59:18.493-05:00  INFO 59488 --- [ms-users] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-21T14:59:18.859-05:00  INFO 59488 --- [ms-users] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21T14:59:18.899-05:00  INFO 59488 --- [ms-users] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-21T14:59:19.090-05:00  INFO 59488 --- [ms-users] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b6136eb
+2026-02-21T14:59:19.094-05:00  INFO 59488 --- [ms-users] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-21T14:59:19.132-05:00  WARN 59488 --- [ms-users] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-21T14:59:19.159-05:00  INFO 59488 --- [ms-users] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21T14:59:20.334-05:00  INFO 59488 --- [ms-users] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table if exists users add column user_id varchar(255) not null
+Hibernate: alter table if exists users add column is_active boolean not null
+Hibernate: alter table if exists users add column created_at timestamp(6)
+Hibernate: alter table if exists users add column updated_at timestamp(6)
+Hibernate: alter table if exists users add column user_email varchar(100) not null
+Hibernate: alter table if exists users add column user_name varchar(100) not null
+Hibernate: alter table if exists users add column user_password varchar(255) not null
+Hibernate: alter table if exists users add column user_role varchar(20) not null
+Hibernate: alter table if exists users drop constraint if exists idx_user_email
+2026-02-21T14:59:20.469-05:00  WARN 59488 --- [ms-users] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-02-21T14:59:20.470-05:00  WARN 59488 --- [ms-users] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "idx_user_email" of relation "users" does not exist, skipping
+Hibernate: alter table if exists users add constraint idx_user_email unique (user_email)
+2026-02-21T14:59:20.486-05:00  INFO 59488 --- [ms-users] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21T14:59:20.937-05:00 DEBUG 59488 --- [ms-users] [           main] c.c.m.i.s.JwtAuthenticationFilter        : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-21T14:59:21.093-05:00  INFO 59488 --- [ms-users] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-02-21T14:59:21.217-05:00  WARN 59488 --- [ms-users] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21T14:59:21.854-05:00  INFO 59488 --- [ms-users] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-21T14:59:21.944-05:00  WARN 59488 --- [ms-users] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-21T14:59:22.018-05:00  INFO 59488 --- [ms-users] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-21T14:59:22.053-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-21T14:59:22.060-05:00  INFO 59488 --- [ms-users] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T14:59:22.070-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-21T14:59:22.071-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-21T14:59:22.071-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-21T14:59:22.071-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-21T14:59:22.072-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-21T14:59:22.072-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-21T14:59:22.073-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-21T14:59:22.740-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-21T14:59:22.744-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-21T14:59:22.747-05:00  INFO 59488 --- [ms-users] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-21T14:59:22.749-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1771703962748 with initial instances count: 0
+2026-02-21T14:59:22.754-05:00  INFO 59488 --- [ms-users] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-USERS with eureka with status UP
+2026-02-21T14:59:22.755-05:00  INFO 59488 --- [ms-users] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1771703962755, current=UP, previous=STARTING]
+2026-02-21T14:59:22.757-05:00  INFO 59488 --- [ms-users] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-USERS/LAPTOP-1RVSALIH.mshome.net:ms-users:8084: registering service...
+2026-02-21T14:59:22.781-05:00  INFO 59488 --- [ms-users] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2026-02-21T14:59:22.784-05:00  INFO 59488 --- [ms-users] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-02-21T14:59:22.798-05:00  INFO 59488 --- [ms-users] [           main] com.core.msusers.MsUsersApplication      : Started MsUsersApplication in 7.502 seconds (process running for 8.129)
+2026-02-21T14:59:22.943-05:00  INFO 59488 --- [ms-users] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-USERS/LAPTOP-1RVSALIH.mshome.net:ms-users:8084 - registration status: 204
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+Hibernate: insert into users (is_active,created_at,updated_at,user_email,user_name,user_password,user_role,user_id) values (?,?,?,?,?,?,?,?)
+2026-02-21T14:59:23.129-05:00  INFO 59488 --- [ms-users] [           main] c.c.m.i.c.AdminUserInitializer           : Seeded default admin user: admin@transportes.local
+2026-02-21T14:59:52.756-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-21T14:59:52.759-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-21T14:59:52.759-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-21T14:59:52.760-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-21T14:59:52.761-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-21T14:59:52.761-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-02-21T14:59:52.762-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-21T14:59:52.804-05:00  INFO 59488 --- [ms-users] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-21T15:01:08.631-05:00  INFO 59488 --- [ms-users] [nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21T15:01:08.633-05:00  INFO 59488 --- [ms-users] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-21T15:01:08.635-05:00  INFO 59488 --- [ms-users] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-21T15:01:08.669-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/auth/login
+2026-02-21T15:01:08.670-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-1] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: null
+2026-02-21T15:01:08.713-05:00  INFO 59488 --- [ms-users] [nio-8084-exec-1] c.c.m.a.s.AuthenticateUserServiceImpl    : Autenticando usuario con email: admin@transportes.local
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T15:01:42.688-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/auth/login
+2026-02-21T15:01:42.690-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-2] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: null
+2026-02-21T15:01:42.693-05:00  INFO 59488 --- [ms-users] [nio-8084-exec-2] c.c.m.a.s.AuthenticateUserServiceImpl    : Autenticando usuario con email: admin@transportes.local
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T15:01:43.059-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : Ejecutando JwtAuthenticationFilter para: /api/users
+2026-02-21T15:01:43.063-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-4] c.c.m.i.s.JwtAuthenticationFilter        : JWT extraído: presente
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_email=?
+2026-02-21T15:01:43.136-05:00 DEBUG 59488 --- [ms-users] [nio-8084-exec-4] c.c.m.a.service.GetUserServiceImpl       : Obteniendo usuarios por rol: TRANSPORTER
+Hibernate: select ue1_0.user_id,ue1_0.is_active,ue1_0.created_at,ue1_0.updated_at,ue1_0.user_email,ue1_0.user_name,ue1_0.user_password,ue1_0.user_role from users ue1_0 where ue1_0.user_role=? and ue1_0.is_active
