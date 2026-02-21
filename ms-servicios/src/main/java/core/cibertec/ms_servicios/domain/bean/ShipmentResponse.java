@@ -22,8 +22,9 @@ public class ShipmentResponse implements Serializable {
     private String origin;
     private String destination;
     private Long clientId;
-    private Long transportId;
+    private String transportId;
     private String orderNumber;
+    private Long statusId;
     private String status;
     private LocalDateTime atDate;
     private LocalDateTime createdAt;

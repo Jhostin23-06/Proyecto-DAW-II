@@ -1,11 +1,13 @@
 package core.cibertec.ms_servicios.application.service;
 
 import core.cibertec.ms_servicios.application.port.outservice.ShipmentPersistencePort;
+import core.cibertec.ms_servicios.application.port.outservice.TransportValidationPort;
 import core.cibertec.ms_servicios.application.port.usecase.GetShipmentPort;
 import core.cibertec.ms_servicios.domain.bean.ShipmentResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -13,6 +15,7 @@ import java.util.List;
 public class GetShipmentServiceImpl implements GetShipmentPort {
 
     private final ShipmentPersistencePort shipmentPersistencePort;
+    private final TransportValidationPort transportValidationPort;
 
     @Override
     public ShipmentResponse getShipmentById(Long id) {
@@ -22,5 +25,19 @@ public class GetShipmentServiceImpl implements GetShipmentPort {
     @Override
     public List<ShipmentResponse> getAllShipments() {
         return shipmentPersistencePort.findAll();
+    }
+
+    @Override
+    public List<ShipmentResponse> getShipmentsByTransportId(String transportId) {
+        return shipmentPersistencePort.findByTransportId(transportId);
+    }
+
+    @Override
+    public List<ShipmentResponse> getShipmentsByTransportUserId(String userId) {
+        List<String> transportIds = transportValidationPort.findTransportIdsByUserId(userId);
+        if (transportIds.isEmpty()) {
+            return Collections.emptyList();
+        }
+        return shipmentPersistencePort.findByTransportIds(transportIds);
     }
 }
