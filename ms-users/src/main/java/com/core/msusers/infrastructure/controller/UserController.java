@@ -26,8 +26,8 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRequest request) {
-        // Asegurar que el rol sea USER (evitar que alguien se auto-asigne ADMIN)
-        request.setUserRole("ADMIN");
+        // Registro publico: forzar CLIENT para evitar auto-asignacion de privilegios.
+        request.setUserRole("CLIENT");
         UserResponse response = createUserPort.createUser(request);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }

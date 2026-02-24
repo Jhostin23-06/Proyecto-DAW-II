@@ -14,6 +14,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 @Slf4j
@@ -36,11 +38,21 @@ public class CreateShipmentServiceImpl implements CreateShipmentPort {
         shipmentModel.validateForCreation(request);
 
         if (!clientValidationPort.existsById(request.getClientId())) {
-            throw new ValidationException("clientId does not exist");
+            throw new ValidationException("Cliente no existe.");
         }
-        if (request.getTransportId() != null && !request.getTransportId().isBlank()
-                && !transportValidationPort.existsById(request.getTransportId())) {
-            throw new ValidationException("transportId does not exist");
+        if (request.getTransportId() != null && !request.getTransportId().isBlank()) {
+            Optional<String> statusOpt = transportValidationPort.getStatusById(request.getTransportId());
+            log.info("Transport validation for createShipment transportId={}, statusPresent={}",
+                    request.getTransportId(), statusOpt.isPresent());
+            if (statusOpt.isEmpty()) {
+                throw new ValidationException("Transporte no existe.");
+            }
+            String status = statusOpt.get().trim().toUpperCase();
+            log.info("Transport status resolved for createShipment transportId={} status={}",
+                    request.getTransportId(), status);
+            if (!"AVAILABLE".equals(status)) {
+                throw new ValidationException("El estado de este transporte está " + status + " y no puede ser usado para este envío");
+            }
         }
 
         ShipmentResponse saved = shipmentPersistencePort.save(request);

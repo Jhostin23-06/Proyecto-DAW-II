@@ -91,3 +91,36 @@
 2026-02-21T16:06:56.436-05:00  INFO 82052 --- [ms-clientes] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
 2026-02-21T16:06:56.460-05:00  INFO 82052 --- [ms-clientes] [  restartedMain] c.c.ms_clientes.MsClientesApplication    : Started MsClientesApplication in 9.861 seconds (process running for 10.638)
 2026-02-21T16:06:56.484-05:00  INFO 82052 --- [ms-clientes] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-CLIENTES/LAPTOP-1RVSALIH.mshome.net:ms-clientes:8081 - registration status: 204
+2026-02-21T16:07:26.396-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-21T16:07:26.407-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-21T16:07:26.407-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-21T16:07:26.408-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-21T16:07:26.408-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-21T16:07:26.408-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-02-21T16:07:26.408-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-21T16:07:26.446-05:00  INFO 82052 --- [ms-clientes] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-21T16:08:33.952-05:00  INFO 82052 --- [ms-clientes] [nio-8081-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21T16:08:33.953-05:00  INFO 82052 --- [ms-clientes] [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-21T16:08:33.957-05:00  INFO 82052 --- [ms-clientes] [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:11:55.861-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T16:16:55.917-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:21:55.969-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:26:56.016-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:31:56.064-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:36:56.112-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:41:56.162-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select ce1_0.id,ce1_0.address,ce1_0.company_code,ce1_0.company_name,ce1_0.contact_name,ce1_0.email,ce1_0.phone from clients ce1_0 where 1=1
+2026-02-21T16:46:56.170-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T16:51:56.216-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T16:56:56.265-05:00  INFO 82052 --- [ms-clientes] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-21T18:46:31.735-05:00  WARN 82052 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h47m39s133ms87µs600ns).
+2026-02-21T21:15:08.532-05:00  WARN 82052 --- [ms-clientes] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28m43s939ms107µs100ns).
