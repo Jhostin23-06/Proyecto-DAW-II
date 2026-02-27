@@ -2,6 +2,7 @@ package com.core.msusers.infrastructure.security;
 
 import com.core.msusers.application.port.outservice.UserPersistencePort;
 import com.core.msusers.domain.bean.UserResponse;
+import com.core.msusers.domain.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -20,7 +21,12 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        UserResponse user = userPersistencePort.findByEmail(email);
+        UserResponse user;
+        try {
+            user = userPersistencePort.findByEmail(email);
+        } catch (UserNotFoundException ex) {
+            throw new UsernameNotFoundException("Usuario no encontrado: " + email, ex);
+        }
 
         return new User(
                 user.getUserEmail(),

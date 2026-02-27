@@ -1,5 +1,6 @@
 package com.transporte.mstransportistas.domain.bean;
 
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ public class TransportRequest implements Serializable {
 
     private String transportUserId;
     private String transportType;
+    @Positive(message = "La capacidad del transporte debe ser positivo y mayor a 0")
     private Double transportCapacity;
     private String transportLocation;
     private String transportDriver;

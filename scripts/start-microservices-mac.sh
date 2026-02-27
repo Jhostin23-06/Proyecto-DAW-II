@@ -104,6 +104,8 @@ start_service "ms-clientes" "ms-clientes" "8081"
 start_service "ms-servicios" "ms-servicios" "8082" "-Dspring-boot.run.arguments=--server.port=8082"
 
 start_service "ms-transportistas" "ms-transportistas" "8083"
+start_service "ms-auditoria" "ms-auditoria" "8085"
+start_service "ms-notificaciones" "ms-notificaciones" "8086"
 start_service "api-gateway" "api-gateway" "8080"
 
 echo ""

@@ -6,6 +6,7 @@ import com.core.msusers.domain.bean.LoginRequest;
 import com.core.msusers.domain.bean.LoginResponse;
 import com.core.msusers.domain.bean.UserResponse;
 import com.core.msusers.domain.exception.InvalidCredentialsException;
+import com.core.msusers.domain.exception.UserNotFoundException;
 import com.core.msusers.infrastructure.security.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,16 +31,17 @@ public class AuthenticateUserServiceImpl implements AuthenticateUserPort {
     public LoginResponse authenticate(LoginRequest request) {
         log.info("Autenticando usuario con email: {}", request.getUserEmail());
 
-        UserResponse user = userPersistencePort.findByEmail(request.getUserEmail());
-
-        if (user == null) {
-            throw new InvalidCredentialsException("Email o contraseña incorrectos");
+        UserResponse user;
+        try {
+            user = userPersistencePort.findByEmail(request.getUserEmail());
+        } catch (UserNotFoundException ex) {
+            throw new InvalidCredentialsException("Email o contrasena incorrectos");
         }
+
         if (!passwordEncoder.matches(request.getUserPassword(), user.getUserPassword())) {
-            throw new InvalidCredentialsException("Email o contraseña incorrectos");
+            throw new InvalidCredentialsException("Email o contrasena incorrectos");
         }
 
-        // 1. Autenticar con Spring Security
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getUserEmail(),
@@ -48,11 +50,8 @@ public class AuthenticateUserServiceImpl implements AuthenticateUserPort {
         );
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-
-        // 2. Generar token JWT
         String jwt = tokenProvider.generateToken(authentication);
 
-        // 4. Construir respuesta
         return new LoginResponse(
                 jwt,
                 "Bearer",

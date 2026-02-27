@@ -21,11 +21,7 @@ public class GetTransportServiceImpl implements GetTransportPort {
     @Override
     public TransportResponse getTransportById(String id) {
         log.debug("Obteniendo transporte por ID: {}", id);
-        TransportResponse response = transportPersistencePort.findById(id);
-        if (response == null) {
-            throw new RuntimeException("Transporte no encontrado con ID: " + id);
-        }
-        return response;
+        return transportPersistencePort.findById(id);
     }
 
     @Override

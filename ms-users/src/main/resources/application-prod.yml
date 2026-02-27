@@ -1,0 +1,37 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: ${MS_USERS_DB_URL}
+    username: ${MS_USERS_DB_USERNAME}
+    password: ${MS_USERS_DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}
+
+app:
+  jwt:
+    secret: ${MS_USERS_JWT_SECRET}
+    expiration: ${MS_USERS_JWT_EXPIRATION}
+  seed:
+    admin:
+      enabled: ${MS_USERS_ADMIN_SEED_ENABLED:false}
+      name: ${MS_USERS_ADMIN_NAME}
+      email: ${MS_USERS_ADMIN_EMAIL}
+      password: ${MS_USERS_ADMIN_PASSWORD}
+
+logging:
+  level:
+    com.core.msusers: INFO

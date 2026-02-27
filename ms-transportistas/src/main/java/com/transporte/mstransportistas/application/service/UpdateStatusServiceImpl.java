@@ -23,32 +23,38 @@ public class UpdateStatusServiceImpl implements UpdateStatusPort {
     public TransportResponse updateTransportStatus(String id, String newStatusStr, String location, String reason) {
         log.info("Actualizando estado del transporte ID: {} a {}", id, newStatusStr);
 
-        // Obtener transporte actual
         TransportResponse current = transportPersistencePort.findById(id);
-        if (current == null) {
-            throw new RuntimeException("Transporte no encontrado con ID: " + id);
+        String currentStatusStr = current.getTransportStatus();
+
+        // Soporte para actualizacion solo de ubicacion (sin cambio de estado).
+        if (newStatusStr == null || newStatusStr.isBlank()) {
+            if (location == null || location.isBlank()) {
+                throw new IllegalArgumentException("location es requerida cuando no se envia transportStatus");
+            }
+
+            TransportResponse updated = transportPersistencePort.updateStatus(id, currentStatusStr, location);
+            log.info("Ubicacion actualizada para transporte ID: {}", id);
+            return updated;
         }
 
-        // Convertir y validar estados
-        TransportStatus currentStatus = TransportStatus.fromString(current.getTransportStatus());
-        TransportStatus newStatusS = TransportStatus.fromString(newStatusStr);
+        TransportStatus currentStatus = TransportStatus.fromString(currentStatusStr);
+        TransportStatus newStatus = TransportStatus.fromString(newStatusStr);
 
-        // Validar transición usando el modelo
-        if (!transportModel.validateTransition(currentStatus, newStatusS)) {
-            String msg = transportModel.getTransitionMessage(currentStatus, newStatusS);
-            throw new IllegalStateException(msg.isEmpty() ? "Transición no permitida" : msg);
+        if (!transportModel.validateTransition(currentStatus, newStatus)) {
+            String msg = transportModel.getTransitionMessage(currentStatus, newStatus);
+            throw new IllegalStateException(msg.isEmpty() ? "Transicion no permitida" : msg);
         }
 
-        // Actualizar estado
-        TransportResponse updated = transportPersistencePort.updateStatus(id, newStatusStr, location);
-        log.info("Estado actualizado exitosamente: {} -> {}", currentStatus, newStatusStr);
+        String normalizedNewStatus = newStatus.name();
+        TransportResponse updated = transportPersistencePort.updateStatus(id, normalizedNewStatus, location);
+        log.info("Estado actualizado exitosamente: {} -> {}", currentStatus, normalizedNewStatus);
 
-        // Publicar evento
         try {
             transportEventPort.publishTransportStatusChanged(
                     id,
-                    current.getTransportStatus(),
-                    newStatusStr,
+                    current.getTransportUserId(),
+                    currentStatusStr,
+                    normalizedNewStatus,
                     reason
             );
             log.debug("Evento de cambio de estado publicado");

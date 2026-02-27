@@ -13,7 +13,9 @@ public class RabbitConfig {
 
     public static final String EXCHANGE = "services.exchange";
     public static final String ROUTING_CREATED = "services.shipment.created";
+    public static final String ROUTING_STATUS_UPDATED = "services.shipment.status.updated";
     public static final String QUEUE_CREATED = "services.shipment.created.queue";
+    public static final String QUEUE_STATUS_UPDATED = "services.shipment.status.updated.queue";
 
     @Bean
     public TopicExchange shipmentExchange() {
@@ -26,8 +28,18 @@ public class RabbitConfig {
     }
 
     @Bean
+    public Queue shipmentStatusUpdatedQueue() {
+        return new Queue(QUEUE_STATUS_UPDATED, true);
+    }
+
+    @Bean
     public Binding bindingShipmentCreated(Queue shipmentCreatedQueue, TopicExchange shipmentExchange) {
         return BindingBuilder.bind(shipmentCreatedQueue).to(shipmentExchange).with(ROUTING_CREATED);
+    }
+
+    @Bean
+    public Binding bindingShipmentStatusUpdated(Queue shipmentStatusUpdatedQueue, TopicExchange shipmentExchange) {
+        return BindingBuilder.bind(shipmentStatusUpdatedQueue).to(shipmentExchange).with(ROUTING_STATUS_UPDATED);
     }
 
 }

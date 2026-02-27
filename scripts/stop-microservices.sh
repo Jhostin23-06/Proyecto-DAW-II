@@ -6,6 +6,8 @@ LOG_DIR="$ROOT_DIR/logs"
 
 SERVICES=(
   "api-gateway"
+  "ms-notificaciones"
+  "ms-auditoria"
   "ms-transportistas"
   "ms-servicios"
   "ms-clientes"

@@ -1,5 +1,6 @@
 package com.core.msusers.domain.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,7 @@ public class UserResponse implements Serializable {
     private String userId;
     private String userName;
     private String userEmail;
+    @JsonIgnore
     private String userPassword;
     private String userRole;
     private LocalDateTime createdAt;

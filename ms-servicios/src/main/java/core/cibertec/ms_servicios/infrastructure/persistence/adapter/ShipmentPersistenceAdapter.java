@@ -3,6 +3,7 @@ package core.cibertec.ms_servicios.infrastructure.persistence.adapter;
 import core.cibertec.ms_servicios.application.port.outservice.ShipmentPersistencePort;
 import core.cibertec.ms_servicios.domain.bean.ShipmentRequest;
 import core.cibertec.ms_servicios.domain.bean.ShipmentResponse;
+import core.cibertec.ms_servicios.domain.exception.ShipmentNotFoundException;
 import core.cibertec.ms_servicios.infrastructure.persistence.entity.ShipmentEntity;
 import core.cibertec.ms_servicios.infrastructure.persistence.entity.ShipmentStatusEntity;
 import core.cibertec.ms_servicios.infrastructure.persistence.repository.ShipmentCategoryRepository;
@@ -15,7 +16,6 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Component
@@ -69,7 +69,7 @@ public class ShipmentPersistenceAdapter implements ShipmentPersistencePort {
     public ShipmentResponse findById(Long id) {
         return shipmentRepository.findById(id)
                 .map(this::toResponse)
-                .orElse(null);
+                .orElseThrow(() -> new ShipmentNotFoundException("Shipment no encontrado con ID: " + id));
     }
 
     @Override
@@ -98,12 +98,8 @@ public class ShipmentPersistenceAdapter implements ShipmentPersistencePort {
 
     @Override
     public ShipmentResponse updateStatus(Long shipmentId, Long statusId) {
-        Optional<ShipmentStatusEntity> nextStatusOpt = shipmentStatusRepository.findById(statusId);
-        if (nextStatusOpt.isEmpty()) {
-            return null;
-        }
-
-        ShipmentStatusEntity nextStatus = nextStatusOpt.get();
+        ShipmentStatusEntity nextStatus = shipmentStatusRepository.findById(statusId)
+                .orElseThrow(() -> new IllegalArgumentException("Status no encontrado con ID: " + statusId));
         return shipmentRepository.findById(shipmentId)
                 .map(entity -> {
                     entity.setStatusRef(nextStatus);
@@ -112,7 +108,7 @@ public class ShipmentPersistenceAdapter implements ShipmentPersistencePort {
                     ShipmentEntity saved = shipmentRepository.save(entity);
                     return toResponse(saved);
                 })
-                .orElse(null);
+                .orElseThrow(() -> new ShipmentNotFoundException("Shipment no encontrado con ID: " + shipmentId));
     }
 
     @Override

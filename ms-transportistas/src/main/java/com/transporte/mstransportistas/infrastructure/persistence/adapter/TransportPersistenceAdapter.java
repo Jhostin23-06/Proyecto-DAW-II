@@ -3,6 +3,7 @@ package com.transporte.mstransportistas.infrastructure.persistence.adapter;
 import com.transporte.mstransportistas.application.port.outservice.TransportPersistencePort;
 import com.transporte.mstransportistas.domain.bean.TransportRequest;
 import com.transporte.mstransportistas.domain.bean.TransportResponse;
+import com.transporte.mstransportistas.domain.exception.TransportNotFoundException;
 import com.transporte.mstransportistas.infrastructure.persistence.entity.TransportEntity;
 import com.transporte.mstransportistas.infrastructure.persistence.repository.TransportRepository;
 import lombok.RequiredArgsConstructor;
@@ -56,7 +57,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
         return transportRepository.findById(id)
                 .filter(TransportEntity::getActive)
                 .map(this::toResponse)
-                .orElseThrow(() -> new RuntimeException("Transporte no encontrado con ID: " + id));
+                .orElseThrow(() -> new TransportNotFoundException("Transporte no encontrado con ID: " + id));
     }
 
     @Override
@@ -91,7 +92,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     @Override
     public TransportResponse updateStatus(String id, String status, String location) {
         TransportEntity entity = transportRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Transporte no encontrado con ID: " + id));
+                .orElseThrow(() -> new TransportNotFoundException("Transporte no encontrado con ID: " + id));
 
         entity.setTransportStatus(status);
         if (location != null && !location.trim().isEmpty()) {
@@ -111,7 +112,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     @Override
     public void deactivate(String id) {
         TransportEntity entity = transportRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Transporte no encontrado"));
+                .orElseThrow(() -> new TransportNotFoundException("Transporte no encontrado con ID: " + id));
         entity.setActive(false);
         entity.setUpdatedAt(LocalDateTime.now());
         transportRepository.save(entity);
@@ -120,7 +121,7 @@ public class TransportPersistenceAdapter implements TransportPersistencePort {
     @Override
     public TransportResponse update(String id, TransportRequest request) {
         TransportEntity entity = transportRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Transporte no encontrado con ID: " + id));
+                .orElseThrow(() -> new TransportNotFoundException("Transporte no encontrado con ID: " + id));
 
         if (request.getTransportType() != null) {
             entity.setTransportType(request.getTransportType());

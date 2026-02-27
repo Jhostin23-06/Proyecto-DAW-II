@@ -1,0 +1,26 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: ${MS_SERVICIOS_DB_URL}
+    username: ${MS_SERVICIOS_DB_USERNAME}
+    password: ${MS_SERVICIOS_DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}
+
+logging:
+  level:
+    core.cibertec.ms_servicios: INFO
