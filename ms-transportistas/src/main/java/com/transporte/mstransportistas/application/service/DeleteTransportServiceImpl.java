@@ -18,9 +18,7 @@ public class DeleteTransportServiceImpl implements DeleteTransportPort {
         log.info("Eliminando (desactivando) transporte con ID: {}", id);
 
         // Verificar que existe
-        if (transportPersistencePort.findById(id) == null) {
-            throw new RuntimeException("Transporte no encontrado con ID: " + id);
-        }
+        transportPersistencePort.findById(id);
 
         // Desactivar (eliminación lógica)
         transportPersistencePort.deactivate(id);

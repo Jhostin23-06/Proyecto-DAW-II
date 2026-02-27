@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public interface TransportEventPort {
     void publishTransportCreated(TransportResponse response);
-    void publishTransportStatusChanged(String transportId, String oldStatus,
+    void publishTransportStatusChanged(String transportId, String transportUserId, String oldStatus,
                                        String newStatus, String reason);
-    void publishTransportAssigned(String transportId, Long shipmentId);
+    void publishTransportAssigned(String transportId, String transportUserId);
 }

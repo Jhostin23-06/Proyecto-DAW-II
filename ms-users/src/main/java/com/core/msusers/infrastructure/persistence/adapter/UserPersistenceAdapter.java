@@ -3,6 +3,7 @@ package com.core.msusers.infrastructure.persistence.adapter;
 import com.core.msusers.application.port.outservice.UserPersistencePort;
 import com.core.msusers.domain.bean.UserRequest;
 import com.core.msusers.domain.bean.UserResponse;
+import com.core.msusers.domain.exception.UserNotFoundException;
 import com.core.msusers.infrastructure.persistence.entity.UserEntity;
 import com.core.msusers.infrastructure.persistence.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -44,7 +45,7 @@ public class UserPersistenceAdapter implements UserPersistencePort {
     public UserResponse findByEmail(String email) {
         return userRepository.findByUserEmail(email)
                 .map(this::toResponse)
-                .orElse(null);
+                .orElseThrow(() -> new UserNotFoundException("Usuario no encontrado con email: " + email));
     }
 
     @Override
@@ -64,7 +65,7 @@ public class UserPersistenceAdapter implements UserPersistencePort {
     @Override
     public UserResponse update(String id, UserRequest request) {
         UserEntity entity = userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));
+                .orElseThrow(() -> new UserNotFoundException("Usuario no encontrado con ID: " + id));
 
         if (request.getUserName() != null) {
             entity.setUserName(request.getUserName());
@@ -87,7 +88,7 @@ public class UserPersistenceAdapter implements UserPersistencePort {
     @Override
     public void deactivate(String id) {
         UserEntity entity = userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+                .orElseThrow(() -> new UserNotFoundException("Usuario no encontrado con ID: " + id));
         entity.setActive(false);
         entity.setUpdatedAt(LocalDateTime.now());
         userRepository.save(entity);

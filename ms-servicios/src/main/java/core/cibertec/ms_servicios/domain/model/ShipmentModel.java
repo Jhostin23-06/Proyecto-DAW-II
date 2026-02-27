@@ -35,6 +35,9 @@ public class ShipmentModel {
         if (request.getClientId() == null || request.getClientId() <= 0) {
             throw new ValidationException("clientId is required and must be positive");
         }
+        if (request.getTransportId() == null || request.getTransportId().trim().isEmpty()) {
+            throw new ValidationException("transportId is required");
+        }
         if (request.getOrderNumber() == null || request.getOrderNumber().trim().isEmpty()) {
             throw new ValidationException("orderNumber is required");
         }

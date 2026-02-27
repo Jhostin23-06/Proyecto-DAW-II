@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-auditoria/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-notificaciones/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-clientes/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-servicios/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-transportistas/src/main/java" charset="UTF-8" />

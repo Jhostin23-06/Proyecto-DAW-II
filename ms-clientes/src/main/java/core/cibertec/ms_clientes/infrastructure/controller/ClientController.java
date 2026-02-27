@@ -1,5 +1,6 @@
 package core.cibertec.ms_clientes.infrastructure.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import core.cibertec.ms_clientes.application.port.inservice.CreateClientUseCase;
 import core.cibertec.ms_clientes.application.port.inservice.DeleteClientUseCase;
@@ -44,7 +45,7 @@ public class ClientController {
     }
 
     @PostMapping
-    public ClientResponse create(@RequestBody ClientCreateRequest req) {
+    public ClientResponse create(@Valid @RequestBody ClientCreateRequest req) {
         Client created = createUseCase.create(
                 new Client(null, req.companyCode(), req.companyName(), req.address(),
                         req.contactName(), req.email(), req.phone())

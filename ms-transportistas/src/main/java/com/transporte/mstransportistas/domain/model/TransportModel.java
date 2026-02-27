@@ -74,6 +74,9 @@ public class TransportModel implements TransportValidation, StatusTransitionVali
         if (request.getTransportCompany() == null || request.getTransportCompany().trim().isEmpty()) {
             throw new IllegalArgumentException("Compañía es requerida");
         }
+        if (request.getTransportLocation() == null || request.getTransportLocation().trim().isEmpty()) {
+            throw new IllegalArgumentException("Ubicación es requerida");
+        }
         return true;
     }
 

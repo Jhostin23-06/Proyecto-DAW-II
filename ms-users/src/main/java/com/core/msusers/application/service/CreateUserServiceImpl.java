@@ -1,6 +1,7 @@
 package com.core.msusers.application.service;
 
 import com.core.msusers.application.port.outservice.UserPersistencePort;
+import com.core.msusers.application.port.outservice.UserEventPort;
 import com.core.msusers.application.port.usecase.CreateUserPort;
 import com.core.msusers.domain.bean.UserRequest;
 import com.core.msusers.domain.bean.UserResponse;
@@ -17,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class CreateUserServiceImpl implements CreateUserPort {
 
     private final UserPersistencePort userPersistencePort;
+    private final UserEventPort userEventPort;
     private final UserModel userModel;
     private final PasswordEncoder passwordEncoder;
 
@@ -39,6 +41,7 @@ public class CreateUserServiceImpl implements CreateUserPort {
         // 4. Guardar
         UserResponse response = userPersistencePort.save(request);
         log.info("Usuario creado exitosamente con ID: {}", response.getUserId());
+        userEventPort.publishUserCreated(response);
 
         return response;
     }

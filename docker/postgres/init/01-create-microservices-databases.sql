@@ -12,3 +12,9 @@ WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'dbservicios')\gexec
 
 SELECT 'CREATE DATABASE dbtransportista OWNER postgres'
 WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'dbtransportista')\gexec
+
+SELECT 'CREATE DATABASE dbauditoria OWNER postgres'
+WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'dbauditoria')\gexec
+
+SELECT 'CREATE DATABASE dbnotificaciones OWNER postgres'
+WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'dbnotificaciones')\gexec

@@ -2,6 +2,8 @@ server:
   port: ${MS_CLIENTES_PORT:8081}
 
 spring:
+  profiles:
+    default: dev
   application:
     name: ms-clientes
 
@@ -13,8 +15,11 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
 
   docker:
     compose:
@@ -32,3 +37,19 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} level=%-5level service=${spring.application.name} corr=%X{correlationId:-N/A} [%thread] %logger - %msg%n"
+  level:
+    core.cibertec.ms_clientes: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true

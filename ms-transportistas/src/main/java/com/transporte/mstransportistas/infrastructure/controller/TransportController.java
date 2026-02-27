@@ -1,21 +1,39 @@
 package com.transporte.mstransportistas.infrastructure.controller;
 
-import com.transporte.mstransportistas.application.port.usecase.*;
+import com.transporte.mstransportistas.application.port.usecase.CreateTransportPort;
+import com.transporte.mstransportistas.application.port.usecase.DeleteTransportPort;
+import com.transporte.mstransportistas.application.port.usecase.FindAvailableTransportPort;
+import com.transporte.mstransportistas.application.port.usecase.GetTransportPort;
+import com.transporte.mstransportistas.application.port.usecase.UpdateStatusPort;
+import com.transporte.mstransportistas.application.port.usecase.UpdateTransportPort;
 import com.transporte.mstransportistas.domain.bean.AssignRequest;
 import com.transporte.mstransportistas.domain.bean.TransportRequest;
 import com.transporte.mstransportistas.domain.bean.TransportResponse;
 import com.transporte.mstransportistas.domain.bean.UpdateStatusRequest;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/transports")
 @RequiredArgsConstructor
+@Validated
 public class TransportController {
 
     private final CreateTransportPort createTransportPort;
@@ -55,10 +73,9 @@ public class TransportController {
         return ResponseEntity.ok(responses);
     }
 
-    // GET - Transportes disponibles con filtros
     @GetMapping("/available/search")
     public ResponseEntity<List<TransportResponse>> findAvailableTransports(
-            @RequestParam Double requiredCapacity,
+            @RequestParam @NotNull @Positive Double requiredCapacity,
             @RequestParam(required = false) String location) {
 
         List<TransportResponse> responses = findAvailableTransportPort
@@ -80,18 +97,13 @@ public class TransportController {
         return ResponseEntity.ok(response);
     }
 
-    // PATCH - Actualizar ubicación
     @PatchMapping("/{id}/location")
     public ResponseEntity<TransportResponse> updateLocation(
             @PathVariable String id,
             @RequestParam String location) {
 
-        // Crear request para actualizar solo ubicación
-        UpdateStatusRequest request = new UpdateStatusRequest();
-        request.setLocation(location);
-
         TransportResponse response = updateStatusPort.updateTransportStatus(
-                id, null, location, "Actualización de ubicación"
+                id, null, location, "Actualizacion de ubicacion"
         );
         return ResponseEntity.ok(response);
     }
@@ -108,7 +120,7 @@ public class TransportController {
     @PatchMapping("/{id}/assign")
     public ResponseEntity<TransportResponse> assignTransport(
             @PathVariable String id,
-            @RequestBody AssignRequest request) {
+            @Valid @RequestBody AssignRequest request) {
         TransportResponse response = updateTransportPort.assignToUser(id, request.getUserId());
         return ResponseEntity.ok(response);
     }
@@ -123,5 +135,4 @@ public class TransportController {
     public ResponseEntity<String> healthCheck() {
         return ResponseEntity.ok("Transport Service is running");
     }
-
 }

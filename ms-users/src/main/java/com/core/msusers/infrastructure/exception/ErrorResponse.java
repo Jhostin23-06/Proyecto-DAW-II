@@ -1,11 +1,10 @@
 package com.core.msusers.infrastructure.exception;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 
 @Data
 @NoArgsConstructor
@@ -15,15 +14,15 @@ public class ErrorResponse {
     private String error;
     private String message;
     private String path;
+    private String timestamp;
+    private String correlationId;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime timestamp;
-
-    public ErrorResponse(int status, String error, String message, String path) {
+    public ErrorResponse(int status, String error, String message, String path, String correlationId) {
         this.status = status;
         this.error = error;
         this.message = message;
         this.path = path;
-        this.timestamp = LocalDateTime.now();
+        this.timestamp = Instant.now().toString();
+        this.correlationId = correlationId;
     }
 }

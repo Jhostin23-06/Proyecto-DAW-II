@@ -1,0 +1,52 @@
+spring:
+  profiles:
+    default: dev
+  application:
+    name: ms-auditoria
+  datasource:
+    url: ${MS_AUDITORIA_DB_URL:jdbc:postgresql://localhost:5432/dbauditoria}
+    username: ${MS_AUDITORIA_DB_USERNAME:postgres}
+    password: ${MS_AUDITORIA_DB_PASSWORD:1234}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:admin}
+    password: ${RABBITMQ_PASSWORD:admin}
+
+server:
+  port: ${MS_AUDITORIA_PORT:8085}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} level=%-5level service=${spring.application.name} corr=%X{correlationId:-N/A} [%thread] %logger - %msg%n"
+  level:
+    com.core.msauditoria: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true

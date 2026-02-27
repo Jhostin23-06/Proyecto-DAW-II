@@ -24,23 +24,10 @@ public class CreateTransportServiceImpl implements CreateTransportPort {
 
     @Override
     public TransportResponse createTransport(TransportRequest request) {
-
-        // Validar que el usuario exista y sea transportista
-//        UserInfo user = userServicePort.getUserById(request.getTransportUserId());
-//        if (user == null) {
-//            throw new IllegalArgumentException("El usuario con ID " + request.getTransportUserId() + " no existe");
-//        }
-
-//        if (!"TRANSPORTER".equals(user.getUserRole())) {
-//            throw new IllegalArgumentException("El usuario no tiene rol de transportista");
-//        }
-//        if (!user.isActive()) {
-//            throw new IllegalArgumentException("El usuario no está activo");
-//        }
-
         log.info("Creando nuevo transporte con placa: {}", request.getTransportLicensePlate());
 
         transportModel.validateForCreation(request);
+        validateTransportUserIfPresent(request.getTransportUserId());
 
         if (transportPersistencePort.existsByLicensePlate(request.getTransportLicensePlate())) {
             throw new IllegalArgumentException("La placa " + request.getTransportLicensePlate() + " ya existe");
@@ -51,11 +38,27 @@ public class CreateTransportServiceImpl implements CreateTransportPort {
         try {
             transportEventPort.publishTransportCreated(response);
         } catch (Exception e) {
-            log.error("No se pudo publicar el evento de creación", e);
-            // No interrumpimos el flujo principal
+            log.error("No se pudo publicar el evento de creacion", e);
+            // No interrumpe el flujo principal de persistencia.
         }
 
         return response;
+    }
 
+    private void validateTransportUserIfPresent(String userId) {
+        if (userId == null || userId.isBlank()) {
+            return;
+        }
+
+        UserInfo user = userServicePort.getUserById(userId.trim());
+        if (user == null) {
+            throw new IllegalArgumentException("El usuario con ID " + userId + " no existe");
+        }
+        if (!"TRANSPORTER".equalsIgnoreCase(user.getUserRole())) {
+            throw new IllegalArgumentException("El usuario no tiene rol de transportista");
+        }
+        if (!user.isActive()) {
+            throw new IllegalArgumentException("El usuario no esta activo");
+        }
     }
 }

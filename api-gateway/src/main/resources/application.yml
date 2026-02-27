@@ -2,61 +2,73 @@ server:
   port: ${API_GATEWAY_PORT:8080}
 
 spring:
+  profiles:
+    default: dev
   application:
     name: api-gateway
   cloud:
     gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins:
-              - "http://localhost:4200"  # o la URL de tu frontend
-              - "http://127.0.0.1:4200"
-            allowedMethods:
-              - GET
-              - POST
-              - PATCH
-              - PUT
-              - DELETE
-              - OPTIONS
-            allowedHeaders:
-              - "*"
-            allowCredentials: true
-            maxAge: 3600
-      discovery:
-        locator:
-          enabled: true               # Habilita rutas autom�ticas
-          lower-case-service-id: true # Usa min�sculas en las rutas
-      routes:
-        - id: transportistas-service
-          uri: lb://ms-transportistas   # Nombre del servicio en Eureka
-          predicates:
-            - Path=/api/transports/**
-        - id: users-service
-          uri: lb://ms-users          # Nombre del servicio en Eureka
-          predicates:
-            - Path=/api/users/**
-        - id: auth-service
-          uri: lb://ms-users
-          predicates:
-            - Path=/api/auth/**
-        - id: clients-service
-          uri: lb://ms-clientes
-          predicates:
-            - Path=/api/clients/**
-        - id: shipments-service
-          uri: lb://ms-servicios
-          predicates:
-            - Path=/api/shipments/**
-        - id: categories-service
-          uri: lb://ms-servicios
-          predicates:
-            - Path=/api/categories/**
-        - id: statuses-service
-          uri: lb://ms-servicios
-          predicates:
-            - Path=/api/statuses/**
-#        Incluir los dem�s servicios
+      server:
+        webflux:
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowedOrigins:
+                  - "http://localhost:4200"
+                  - "http://127.0.0.1:4200"
+                allowedMethods:
+                  - GET
+                  - POST
+                  - PATCH
+                  - PUT
+                  - DELETE
+                  - OPTIONS
+                allowedHeaders:
+                  - "*"
+                allowCredentials: true
+                maxAge: 3600
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            - id: transportistas-service
+              uri: lb://ms-transportistas
+              predicates:
+                - Path=/api/transports/**
+            - id: users-service
+              uri: lb://ms-users
+              predicates:
+                - Path=/api/users/**
+            - id: auth-service
+              uri: lb://ms-users
+              predicates:
+                - Path=/api/auth/**
+            - id: clients-service
+              uri: lb://ms-clientes
+              predicates:
+                - Path=/api/clients/**
+            - id: shipments-service
+              uri: lb://ms-servicios
+              predicates:
+                - Path=/api/shipments/**
+            - id: categories-service
+              uri: lb://ms-servicios
+              predicates:
+                - Path=/api/categories/**
+            - id: statuses-service
+              uri: lb://ms-servicios
+              predicates:
+                - Path=/api/statuses/**
+            - id: audit-service
+              uri: lb://ms-auditoria
+              predicates:
+                - Path=/api/audit/**
+            - id: notifications-service
+              uri: lb://ms-notificaciones
+              predicates:
+                - Path=/api/notifications/**
+
 eureka:
   client:
     service-url:
@@ -65,8 +77,20 @@ eureka:
     instance-id: ${spring.application.name}:${random.value}
 
 logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} level=%-5level service=${spring.application.name} corr=%X{correlationId:-N/A} [%thread] %logger - %msg%n"
   level:
-    org.springframework.cloud.gateway: DEBUG
-    org.springframework.web: DEBUG
-    reactor.netty.http.client: DEBUG
-    com.netflix.discovery: DEBUG
+    org.springframework.cloud.gateway: INFO
+    org.springframework.web: INFO
+    reactor.netty.http.client: INFO
+    com.netflix.discovery: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true

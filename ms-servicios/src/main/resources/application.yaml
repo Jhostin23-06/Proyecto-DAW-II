@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    default: dev
   application:
     name: ms-servicios
   datasource:
@@ -12,8 +14,8 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: validate
+    show-sql: false
     properties:
       hibernate:
         format_sql: true
@@ -21,6 +23,9 @@ spring:
           batch_size: 20
         order_inserts: true
         order_updates: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
@@ -30,6 +35,7 @@ spring:
     exchange: services.exchange
     routing:
       shipment-created: services.shipment.created
+      shipment-status-updated: services.shipment.status.updated
 
   jackson:
     serialization:
@@ -42,6 +48,92 @@ feign:
         connect-timeout: 5000
         read-timeout: 5000
         logger-level: basic
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      shipmentService:
+        register-health-indicator: true
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 30s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+        event-consumer-buffer-size: 100
+        record-exceptions:
+          - core.cibertec.ms_servicios.domain.exception.ExternalServiceException
+          - feign.RetryableException
+          - java.net.ConnectException
+          - java.net.SocketTimeoutException
+      clientValidationService:
+        register-health-indicator: true
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 30s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+        event-consumer-buffer-size: 100
+        record-exceptions:
+          - core.cibertec.ms_servicios.domain.exception.ExternalServiceException
+          - feign.RetryableException
+          - java.net.ConnectException
+          - java.net.SocketTimeoutException
+      transportValidationService:
+        register-health-indicator: true
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 30s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+        event-consumer-buffer-size: 100
+        record-exceptions:
+          - core.cibertec.ms_servicios.domain.exception.ExternalServiceException
+          - feign.RetryableException
+          - java.net.ConnectException
+          - java.net.SocketTimeoutException
+  retry:
+    instances:
+      shipmentServiceRetry:
+        max-attempts: 3
+        wait-duration: 500ms
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+        register-health-indicator: true
+        event-consumer-buffer-size: 100
+        retry-exceptions:
+          - core.cibertec.ms_servicios.domain.exception.ExternalServiceException
+        ignore-exceptions:
+          - jakarta.validation.ValidationException
+          - java.lang.IllegalArgumentException
+      clientValidationRetry:
+        max-attempts: 3
+        wait-duration: 500ms
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+        register-health-indicator: true
+        event-consumer-buffer-size: 100
+        retry-exceptions:
+          - core.cibertec.ms_servicios.domain.exception.ExternalServiceException
+        ignore-exceptions:
+          - java.lang.IllegalArgumentException
+      transportValidationRetry:
+        max-attempts: 3
+        wait-duration: 500ms
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+        register-health-indicator: true
+        event-consumer-buffer-size: 100
+        retry-exceptions:
+          - core.cibertec.ms_servicios.domain.exception.ExternalServiceException
+        ignore-exceptions:
+          - java.lang.IllegalArgumentException
+          - feign.FeignException$NotFound
 server:
   port: ${MS_SERVICIOS_PORT:8082}
 
@@ -51,4 +143,23 @@ eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} level=%-5level service=${spring.application.name} corr=%X{correlationId:-N/A} [%thread] %logger - %msg%n"
+  level:
+    core.cibertec.ms_servicios: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus,circuitbreakers,circuitbreakerevents,retries,retryevents
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  health:
+    circuitbreakers:
+      enabled: true
 

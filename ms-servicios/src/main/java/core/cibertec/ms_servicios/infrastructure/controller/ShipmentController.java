@@ -65,9 +65,6 @@ public class ShipmentController {
             @Valid @RequestBody UpdateShipmentStatusRequest request) {
 
         ShipmentResponse resp = updateShipmentStatusPort.updateShipmentStatus(id, request.getStatusId());
-        if (resp == null) {
-            return ResponseEntity.notFound().build();
-        }
         return ResponseEntity.ok(resp);
     }
 

@@ -3,6 +3,7 @@ package com.core.msusers.application.service;
 import com.core.msusers.application.port.outservice.UserPersistencePort;
 import com.core.msusers.application.port.usecase.GetUserPort;
 import com.core.msusers.domain.bean.UserResponse;
+import com.core.msusers.domain.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class GetUserServiceImpl implements GetUserPort {
     public UserResponse getUserById(String id) {
         log.debug("Obteniendo usuario por ID: {}", id);
         return userPersistencePort.findById(id)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));
+                .orElseThrow(() -> new UserNotFoundException("Usuario no encontrado con ID: " + id));
     }
 
     @Override

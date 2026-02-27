@@ -10,7 +10,7 @@
         <module name="api-gateway" />
         <module name="eureka-server" />
       </profile>
-      <profile name="Annotation profile for ms-servicios" enabled="true">
+      <profile name="Annotation profile for ms-notificaciones" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -19,7 +19,9 @@
         </processorPath>
         <module name="ms-clientes" />
         <module name="ms-servicios" />
+        <module name="ms-notificaciones" />
         <module name="ms-users" />
+        <module name="ms-auditoria" />
         <module name="ms-transportistas" />
       </profile>
     </annotationProcessing>
@@ -28,7 +30,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="ms-auditoria" options="-parameters" />
       <module name="ms-clientes" options="-parameters" />
+      <module name="ms-notificaciones" options="-parameters" />
       <module name="ms-servicios" options="-parameters" />
       <module name="ms-transportistas" options="-parameters" />
       <module name="ms-users" options="-parameters" />

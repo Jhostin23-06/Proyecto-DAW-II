@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  jpa:
+    show-sql: false
+
+eureka:
+  client:
+    enabled: false
+
+app:
+  seed:
+    admin:
+      enabled: false

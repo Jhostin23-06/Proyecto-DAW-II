@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    default: dev
   application:
     name: ms-users
 
@@ -10,17 +12,28 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: validate
+    show-sql: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
 
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
     username: ${RABBITMQ_USERNAME:admin}
     password: ${RABBITMQ_PASSWORD:admin}
+
+rabbitmq:
+  exchange:
+    users: users.exchange
+  routing-key:
+    user-created: users.created
+    user-updated: users.updated
+    user-deleted: users.deleted
 
 server:
   port: ${MS_USERS_PORT:8084}
@@ -46,5 +59,17 @@ app:
       password: ${MS_USERS_ADMIN_PASSWORD:Admin123!}
 
 logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} level=%-5level service=${spring.application.name} corr=%X{correlationId:-N/A} [%thread] %logger - %msg%n"
   level:
-    com.core.msusers: DEBUG
+    com.core.msusers: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true

@@ -20,40 +20,41 @@ import java.time.format.DateTimeParseException;
 public class ShipmentRequest implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @NotNull(message = "categoryId is required")
+    @NotNull(message = "Categoría es requerida")
     @Setter(AccessLevel.NONE)
     private Long categoryId;
 
-    @NotBlank(message = "description is required")
+    @NotBlank(message = "Descripción es requerida")
     private String description;
 
-    @NotNull(message = "price is required")
-    @Positive(message = "price must be positive")
+    @NotNull(message = "Precio es requerido")
+    @Positive(message = "Precio debe ser positivo")
     private Double price;
 
-    @NotNull(message = "weight is required")
-    @Positive(message = "weight must be positive")
+    @NotNull(message = "Peso es requerido")
+    @Positive(message = "Peso debe ser positivo")
     private Double weight;
 
-    @NotNull(message = "volume is required")
-    @Positive(message = "volume must be positive")
+    @NotNull(message = "Volumen es requerido")
+    @Positive(message = "Volumen debe ser positivo")
     private Double volume;
 
-    @NotBlank(message = "origin is required")
+    @NotBlank(message = "Origen es requerido")
     private String origin;
 
-    @NotBlank(message = "destination is required")
+    @NotBlank(message = "Destino es requerido")
     private String destination;
 
-    @NotNull(message = "clientId is required")
+    @NotNull(message = "Cliente es requerido")
     @Positive(message = "clientId must be positive")
     @Setter(AccessLevel.NONE)
     private Long clientId;
 
+    @NotBlank(message = "Transporte es requerido")
     @Setter(AccessLevel.NONE)
     private String transportId;
 
-    @NotBlank(message = "orderNumber is required")
+    @NotBlank(message = "Número de orden es requerido")
     private String orderNumber;
 
     @JsonIgnore
@@ -95,7 +96,7 @@ public class ShipmentRequest implements Serializable {
 
     @JsonSetter("transportId")
     public void setTransportId(Object value) {
-        this.transportId = parseOptionalText(value);
+        this.transportId = parseRequiredText(value, "transportId");
     }
 
     private Long parsePositiveLong(Object raw, String fieldName, boolean required) {
@@ -143,6 +144,14 @@ public class ShipmentRequest implements Serializable {
             return null;
         }
         return value;
+    }
+
+    private String parseRequiredText(Object raw, String fieldName) {
+        String parsed = parseOptionalText(raw);
+        if (parsed == null) {
+            throw new IllegalArgumentException(fieldName + " is required");
+        }
+        return parsed;
     }
 
 }

@@ -1,6 +1,5 @@
 package com.transporte.mstransportistas.infrastructure.messaging.adapter;
 
-import com.netflix.discovery.StatusChangeEvent;
 import com.transporte.mstransportistas.application.port.outservice.TransportEventPort;
 import com.transporte.mstransportistas.domain.bean.TransportResponse;
 import lombok.RequiredArgsConstructor;
@@ -44,12 +43,14 @@ public class TransportEventAdapter implements TransportEventPort {
     }
 
     @Override
-    public void publishTransportStatusChanged(String transportId, String oldStatus, String newStatus, String reason) {
+    public void publishTransportStatusChanged(String transportId, String transportUserId,
+                                              String oldStatus, String newStatus, String reason) {
         try {
             log.info("Publicando evento de cambio de estado: {} -> {}", oldStatus, newStatus);
 
             StatusChangeEvent event = new StatusChangeEvent(
                     transportId,
+                    transportUserId,
                     oldStatus,
                     newStatus,
                     reason,
@@ -68,14 +69,14 @@ public class TransportEventAdapter implements TransportEventPort {
     }
 
     @Override
-    public void publishTransportAssigned(String transportId, Long shipmentId) {
+    public void publishTransportAssigned(String transportId, String transportUserId) {
         try {
-            log.info("Publicando evento de transporte asignado: transportId={}, shipmentId={}",
-                    transportId, shipmentId);
+            log.info("Publicando evento de transporte asignado: transportId={}, transportUserId={}",
+                    transportId, transportUserId);
 
             AssignmentEvent event = new AssignmentEvent(
                     transportId,
-                    shipmentId,
+                    transportUserId,
                     System.currentTimeMillis()
             );
 
@@ -92,6 +93,7 @@ public class TransportEventAdapter implements TransportEventPort {
 
     private record StatusChangeEvent(
             String transportId,
+            String transportUserId,
             String oldStatus,
             String newStatus,
             String reason,
@@ -100,7 +102,7 @@ public class TransportEventAdapter implements TransportEventPort {
 
     private record AssignmentEvent(
             String transportId,
-            Long shipmentId,
+            String transportUserId,
             long timestamp
     ) {}
 }
